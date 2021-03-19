@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<db2oraclemigrationUA>
+  <Search>
+       <RegexPattern>\bFETCH\b</RegexPattern>
+	   <propertyname>FETCH</propertyname>
+	   <Rulename>SELECT_Statement_variations</Rulename>
+  </Search>
+   <Search>
+       <RegexPattern>\bTIME\b</RegexPattern>
+	   <propertyname>TIME</propertyname>
+	    <Rulename>Built_in_SQL_Functions_variations</Rulename>
+  </Search>
+  <Search>
+       <RegexPattern>\bCLOB\b</RegexPattern>
+	   <propertyname>CLOB</propertyname>
+	    <Rulename>Built_in_SQL_Functions_variations</Rulename>
+  </Search>
+  <Search>
+       <RegexPattern>\bDATE\b</RegexPattern>
+	   <propertyname>DATE</propertyname>
+	    <Rulename>Built_in_SQL_Functions_variations</Rulename>
+  </Search>
+  <Search>
+       <RegexPattern>\bDECIMAL\b</RegexPattern>
+	   <propertyname>DECIMAL</propertyname>
+	    <Rulename>Built_in_SQL_Functions_variations</Rulename>
+  </Search>
+  <Search>
+       <RegexPattern>\bCONCAT\b</RegexPattern>
+	   <propertyname>CONCAT</propertyname>
+	    <Rulename>SQL_language_elements_variations</Rulename>
+  </Search>
+ 
+  <Search>
+       <RegexPattern>\bRESULT_SET_LOCATOR\b</RegexPattern>
+	   <propertyname>RESULT_SET_LOCATOR</propertyname>
+	    <Rulename>SQL_language_elements_variations</Rulename>
+  </Search>
+  
+ </db2oraclemigrationUA>

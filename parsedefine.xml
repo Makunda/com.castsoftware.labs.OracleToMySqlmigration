@@ -31,7 +31,7 @@
 		<Rulename>SELECT_Statement_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bWITH_UR\b</RegexPattern>
+		<RegexPattern>\bWITH UR\b</RegexPattern>
 		<propertyname>WITH_UR</propertyname>
 		<Rulename>SELECT_Statement_variations</Rulename>
 	</Search>
@@ -86,12 +86,12 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bCHARACTER_LENGTH\b</RegexPattern>
+		<RegexPattern>\bCHARACTER LENGTH\b</RegexPattern>
 		<propertyname>CHARACTER_LENGTH</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bCHAR_LENGTH\b</RegexPattern>
+		<RegexPattern>\bCHAR LENGTH\b</RegexPattern>
 		<propertyname>CHAR_LENGTH</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
@@ -106,12 +106,12 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bCURRENT_DATE\b</RegexPattern>
+		<RegexPattern>\bCURRENT DATE\b</RegexPattern>
 		<propertyname>CURRENT_DATE</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bCURRENT_SERVER\b</RegexPattern>
+		<RegexPattern>\bCURRENT SERVER\b</RegexPattern>
 		<propertyname>CURRENT_SERVER</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
@@ -126,12 +126,12 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bCURRENT_USER\b</RegexPattern>
+		<RegexPattern>\bCURRENT USER\b</RegexPattern>
 		<propertyname>CURRENT_USER</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bCURSOR_ROWCOUNT\b</RegexPattern>
+		<RegexPattern>\bCURSOR ROWCOUNT\b</RegexPattern>
 		<propertyname>CURSOR_ROWCOUNT</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
@@ -171,18 +171,18 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>  \bDIGITS\b</RegexPattern>
-		<propertyname>  DIGITS</propertyname>
+		<RegexPattern>\bDIGITS\b</RegexPattern>
+		<propertyname>DIGITS</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
 		<RegexPattern>\bDOUBLE\b</RegexPattern>
-		<propertyname>  DOUBLE</propertyname>
+		<propertyname>DOUBLE</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>    \bEMPTY_DBCLOB\b</RegexPattern>
-		<propertyname> EMPTY_DBCLOB</propertyname>
+		<RegexPattern>\bEMPTY DBCLOB\b</RegexPattern>
+		<propertyname>EMPTY_DBCLOB</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
@@ -241,23 +241,23 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bLONG_VARCHAR\b</RegexPattern>
+		<RegexPattern>\bLONG VARCHAR\b</RegexPattern>
 		<propertyname>LONG_VARCHAR</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>       \bLONG_VARGRAPHIC\b</RegexPattern>
-		<propertyname> LONG_VARGRAPHIC</propertyname>
+		<RegexPattern>\bLONG_VARGRAPHIC\b</RegexPattern>
+		<propertyname>LONG_VARGRAPHIC</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>    \bMIN\b</RegexPattern>
-		<propertyname> MIN</propertyname>
+		<RegexPattern>\bMIN\b</RegexPattern>
+		<propertyname>MIN</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern> \bMAX\b</RegexPattern>
-		<propertyname> MAX</propertyname>
+		<RegexPattern>\bMAX\b</RegexPattern>
+		<propertyname>MAX</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
@@ -276,7 +276,7 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>    \bMULTIPLY_ALT\b</RegexPattern>
+		<RegexPattern>\bMULTIPLY ALT\b</RegexPattern>
 		<propertyname>MULTIPLY_ALT</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
@@ -286,7 +286,7 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>    \bMIDNIGHT_SECONDS\b</RegexPattern>
+		<RegexPattern>\bMIDNIGHT_SECONDS\b</RegexPattern>
 		<propertyname>MIDNIGHT_SECONDS</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
@@ -301,7 +301,7 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern> \bNVARCHAR\b</RegexPattern>
+		<RegexPattern>\bNVARCHAR\b</RegexPattern>
 		<propertyname>NVARCHAR</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
@@ -357,7 +357,7 @@
 	</Search>
 	<Search>
 		<RegexPattern>\bSMALLINT\b</RegexPattern>
-		<propertyname>SMALLINT</propertyname>
+		<propertyname>FunctionSMALLINT</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
@@ -376,7 +376,7 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern> \bTIMESTAMPDIFF\b</RegexPattern>
+		<RegexPattern>\bTIMESTAMPDIFF\b</RegexPattern>
 		<propertyname>TIMESTAMPDIFF</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
@@ -467,7 +467,7 @@
 	</Search>
 	<Search>
 		<RegexPattern>\bBIGINT\b</RegexPattern>
-		<propertyname>BIGINT</propertyname>
+		<propertyname>DATATYPEBIGINT</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>
@@ -482,27 +482,27 @@
 	</Search>
 	<Search>
 		<RegexPattern>\bDBCLOB\b</RegexPattern>
-		<propertyname>DBCLOB</propertyname>
+		<propertyname>DATATYPEDBCLOB</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>
 		<RegexPattern>\bDECIMAL\b</RegexPattern>
-		<propertyname>DECIMAL1</propertyname>
+		<propertyname>DATATYPEDECIMAL</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>
 		<RegexPattern>\bDECFLOAT\b</RegexPattern>
-		<propertyname>DECFLOAT</propertyname>
+		<propertyname>DATATYPEDECFLOAT</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>
 		<RegexPattern>\bFLOAT\b</RegexPattern>
-		<propertyname>FLOAT</propertyname>
+		<propertyname>DATATYPEFLOAT</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>
 		<RegexPattern>\bGRAPHIC\b</RegexPattern>
-		<propertyname>GRAPHIC</propertyname>
+		<propertyname>DATATYPEGRAPHIC</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>
@@ -516,7 +516,7 @@
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern> \bNUMERIC\b</RegexPattern>
+		<RegexPattern>\bNUMERIC\b</RegexPattern>
 		<propertyname>NUMERIC</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
@@ -532,22 +532,22 @@
 	</Search>
 	<Search>
 		<RegexPattern>\bTIME\b</RegexPattern>
-		<propertyname>TIME</propertyname>
+		<propertyname>DATATYPETIME</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>
 		<RegexPattern>\bVARCHAR\b</RegexPattern>
-		<propertyname>VARCHAR</propertyname>
+		<propertyname>DATATYPEVARCHAR</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bVARCHAR_FOR_BIT_DATA\b</RegexPattern>
+		<RegexPattern>\bVARCHAR FOR BIT DATA\b</RegexPattern>
 		<propertyname>VARCHAR_FOR_BIT_DATA</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>
 		<RegexPattern>\bVARGRAPHIC\b</RegexPattern>
-		<propertyname>VARGRAPHIC</propertyname>
+		<propertyname>DATATYPEVARGRAPHIC</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
 	<Search>

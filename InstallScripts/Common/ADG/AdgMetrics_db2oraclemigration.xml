@@ -958,6 +958,6 @@
     <METRIC_ID>2090812</METRIC_ID>
     <DESCRIPTION_TYPE_ID>9</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION> Number of violation patterns found in db2migration module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Number of violation patterns found in db2migration module</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
 </DATA>

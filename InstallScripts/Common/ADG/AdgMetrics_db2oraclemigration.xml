@@ -2,7 +2,7 @@
 <DATA model='Central Model' version='1.1' scope='db2oraclemigrationScope' export='OK'><!-- File generated with CAST Metrics Compiler ##VERSION_BUILD## -->
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090802</METRIC_ID>
-    <METRIC_NAME>Built-in SQL Functions need to be refactored</METRIC_NAME>
+    <METRIC_NAME>Built-in SQL Functions need to be refactored.</METRIC_NAME>
     <METRIC_DESCRIPTION>See Metric Documentation</METRIC_DESCRIPTION>
     <METRIC_TYPE>3</METRIC_TYPE>
     <METRIC_GROUP>1</METRIC_GROUP>
@@ -13,7 +13,7 @@
   </DSS_METRIC_TYPES>
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090803</METRIC_ID>
-    <METRIC_NAME>Built-in SQL Functions need to be refactored</METRIC_NAME>
+    <METRIC_NAME>Built-in SQL Functions need to be refactored.</METRIC_NAME>
     <METRIC_DESCRIPTION>description details</METRIC_DESCRIPTION>
     <METRIC_TYPE>2</METRIC_TYPE>
     <METRIC_GROUP>2</METRIC_GROUP>
@@ -24,7 +24,7 @@
   </DSS_METRIC_TYPES>
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090804</METRIC_ID>
-    <METRIC_NAME>Converting SQL language elements variations from DB2 to oracle</METRIC_NAME>
+    <METRIC_NAME>Converting SQL language elements variations from DB2 to oracle.</METRIC_NAME>
     <METRIC_DESCRIPTION>See Metric Documentation</METRIC_DESCRIPTION>
     <METRIC_TYPE>3</METRIC_TYPE>
     <METRIC_GROUP>1</METRIC_GROUP>
@@ -35,7 +35,7 @@
   </DSS_METRIC_TYPES>
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090805</METRIC_ID>
-    <METRIC_NAME>Converting SQL language elements variations from DB2 to oracle</METRIC_NAME>
+    <METRIC_NAME>Converting SQL language elements variations from DB2 to oracle.</METRIC_NAME>
     <METRIC_DESCRIPTION>description details</METRIC_DESCRIPTION>
     <METRIC_TYPE>2</METRIC_TYPE>
     <METRIC_GROUP>2</METRIC_GROUP>
@@ -46,7 +46,7 @@
   </DSS_METRIC_TYPES>
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090806</METRIC_ID>
-    <METRIC_NAME>Datetime interval expressions need to be refactored</METRIC_NAME>
+    <METRIC_NAME>Datetime interval expressions need to be refactored.</METRIC_NAME>
     <METRIC_DESCRIPTION>See Metric Documentation</METRIC_DESCRIPTION>
     <METRIC_TYPE>3</METRIC_TYPE>
     <METRIC_GROUP>1</METRIC_GROUP>
@@ -57,7 +57,7 @@
   </DSS_METRIC_TYPES>
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090807</METRIC_ID>
-    <METRIC_NAME>Datetime interval expressions need to be refactored</METRIC_NAME>
+    <METRIC_NAME>Datetime interval expressions need to be refactored.</METRIC_NAME>
     <METRIC_DESCRIPTION>description details</METRIC_DESCRIPTION>
     <METRIC_TYPE>2</METRIC_TYPE>
     <METRIC_GROUP>2</METRIC_GROUP>
@@ -68,7 +68,7 @@
   </DSS_METRIC_TYPES>
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090808</METRIC_ID>
-    <METRIC_NAME>Data Types variations  from DB2 to Oracle</METRIC_NAME>
+    <METRIC_NAME>Data Types variations  from DB2 to Oracle.</METRIC_NAME>
     <METRIC_DESCRIPTION>See Metric Documentation</METRIC_DESCRIPTION>
     <METRIC_TYPE>3</METRIC_TYPE>
     <METRIC_GROUP>1</METRIC_GROUP>
@@ -79,7 +79,7 @@
   </DSS_METRIC_TYPES>
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090809</METRIC_ID>
-    <METRIC_NAME>Data Types variations  from DB2 to Oracle</METRIC_NAME>
+    <METRIC_NAME>Data Types variations  from DB2 to Oracle.</METRIC_NAME>
     <METRIC_DESCRIPTION>description details</METRIC_DESCRIPTION>
     <METRIC_TYPE>2</METRIC_TYPE>
     <METRIC_GROUP>2</METRIC_GROUP>
@@ -112,7 +112,7 @@
   </DSS_METRIC_TYPES>
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090812</METRIC_ID>
-    <METRIC_NAME>CREATE TABLE statement from DB2 to Oracle need to be refactored</METRIC_NAME>
+    <METRIC_NAME>CREATE TABLE statement from DB2 to Oracle need to be refactored.</METRIC_NAME>
     <METRIC_DESCRIPTION>See Metric Documentation</METRIC_DESCRIPTION>
     <METRIC_TYPE>3</METRIC_TYPE>
     <METRIC_GROUP>1</METRIC_GROUP>
@@ -123,7 +123,7 @@
   </DSS_METRIC_TYPES>
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090813</METRIC_ID>
-    <METRIC_NAME>CREATE TABLE statement from DB2 to Oracle need to be refactored</METRIC_NAME>
+    <METRIC_NAME>CREATE TABLE statement from DB2 to Oracle need to be refactored.</METRIC_NAME>
     <METRIC_DESCRIPTION>description details</METRIC_DESCRIPTION>
     <METRIC_TYPE>2</METRIC_TYPE>
     <METRIC_GROUP>2</METRIC_GROUP>
@@ -133,7 +133,7 @@
     <PROPERTY_ID>0</PROPERTY_ID>
   </DSS_METRIC_TYPES>
   <DSS_METRIC_TYPE_TREES>
-    <METRIC_PARENT_ID>61024</METRIC_PARENT_ID>
+    <METRIC_PARENT_ID>61004</METRIC_PARENT_ID>
     <METRIC_ID>2090802</METRIC_ID>
     <METRIC_INDEX>2</METRIC_INDEX>
     <AGGREGATE_WEIGHT>6</AGGREGATE_WEIGHT>
@@ -142,7 +142,7 @@
     <METRIC_CRITICAL>0</METRIC_CRITICAL>
   </DSS_METRIC_TYPE_TREES>
   <DSS_METRIC_TYPE_TREES>
-    <METRIC_PARENT_ID>61024</METRIC_PARENT_ID>
+    <METRIC_PARENT_ID>61004</METRIC_PARENT_ID>
     <METRIC_ID>2090804</METRIC_ID>
     <METRIC_INDEX>3</METRIC_INDEX>
     <AGGREGATE_WEIGHT>6</AGGREGATE_WEIGHT>
@@ -151,7 +151,7 @@
     <METRIC_CRITICAL>0</METRIC_CRITICAL>
   </DSS_METRIC_TYPE_TREES>
   <DSS_METRIC_TYPE_TREES>
-    <METRIC_PARENT_ID>61024</METRIC_PARENT_ID>
+    <METRIC_PARENT_ID>61004</METRIC_PARENT_ID>
     <METRIC_ID>2090806</METRIC_ID>
     <METRIC_INDEX>4</METRIC_INDEX>
     <AGGREGATE_WEIGHT>6</AGGREGATE_WEIGHT>
@@ -160,7 +160,7 @@
     <METRIC_CRITICAL>0</METRIC_CRITICAL>
   </DSS_METRIC_TYPE_TREES>
   <DSS_METRIC_TYPE_TREES>
-    <METRIC_PARENT_ID>61024</METRIC_PARENT_ID>
+    <METRIC_PARENT_ID>61004</METRIC_PARENT_ID>
     <METRIC_ID>2090808</METRIC_ID>
     <METRIC_INDEX>5</METRIC_INDEX>
     <AGGREGATE_WEIGHT>6</AGGREGATE_WEIGHT>
@@ -169,7 +169,7 @@
     <METRIC_CRITICAL>0</METRIC_CRITICAL>
   </DSS_METRIC_TYPE_TREES>
   <DSS_METRIC_TYPE_TREES>
-    <METRIC_PARENT_ID>61024</METRIC_PARENT_ID>
+    <METRIC_PARENT_ID>61004</METRIC_PARENT_ID>
     <METRIC_ID>2090810</METRIC_ID>
     <METRIC_INDEX>6</METRIC_INDEX>
     <AGGREGATE_WEIGHT>6</AGGREGATE_WEIGHT>
@@ -178,7 +178,7 @@
     <METRIC_CRITICAL>0</METRIC_CRITICAL>
   </DSS_METRIC_TYPE_TREES>
   <DSS_METRIC_TYPE_TREES>
-    <METRIC_PARENT_ID>61024</METRIC_PARENT_ID>
+    <METRIC_PARENT_ID>61004</METRIC_PARENT_ID>
     <METRIC_ID>2090812</METRIC_ID>
     <METRIC_INDEX>7</METRIC_INDEX>
     <AGGREGATE_WEIGHT>6</AGGREGATE_WEIGHT>
@@ -254,7 +254,7 @@
   <DSS_METRIC_VALUE_TYPES>
     <METRIC_ID>2090802</METRIC_ID>
     <METRIC_VALUE_INDEX>1</METRIC_VALUE_INDEX>
-    <METRIC_VALUE_NAME>Built-in SQL Functions need to be refactored</METRIC_VALUE_NAME>
+    <METRIC_VALUE_NAME>Built-in SQL Functions need to be refactored.</METRIC_VALUE_NAME>
     <METRIC_VALUE_DESCRIPTION>See Metric documentation</METRIC_VALUE_DESCRIPTION>
     <METRIC_VALUE_PROCEDURE_NAME>$n$u$l$l$</METRIC_VALUE_PROCEDURE_NAME>
     <METRIC_AGGREGATE_OPERATOR>11</METRIC_AGGREGATE_OPERATOR>
@@ -298,7 +298,7 @@
   <DSS_METRIC_VALUE_TYPES>
     <METRIC_ID>2090804</METRIC_ID>
     <METRIC_VALUE_INDEX>1</METRIC_VALUE_INDEX>
-    <METRIC_VALUE_NAME>Converting SQL language elements variations from DB2 to oracle</METRIC_VALUE_NAME>
+    <METRIC_VALUE_NAME>Converting SQL language elements variations from DB2 to oracle.</METRIC_VALUE_NAME>
     <METRIC_VALUE_DESCRIPTION>See Metric documentation</METRIC_VALUE_DESCRIPTION>
     <METRIC_VALUE_PROCEDURE_NAME>$n$u$l$l$</METRIC_VALUE_PROCEDURE_NAME>
     <METRIC_AGGREGATE_OPERATOR>11</METRIC_AGGREGATE_OPERATOR>
@@ -342,7 +342,7 @@
   <DSS_METRIC_VALUE_TYPES>
     <METRIC_ID>2090806</METRIC_ID>
     <METRIC_VALUE_INDEX>1</METRIC_VALUE_INDEX>
-    <METRIC_VALUE_NAME>Datetime interval expressions need to be refactored</METRIC_VALUE_NAME>
+    <METRIC_VALUE_NAME>Datetime interval expressions need to be refactored.</METRIC_VALUE_NAME>
     <METRIC_VALUE_DESCRIPTION>See Metric documentation</METRIC_VALUE_DESCRIPTION>
     <METRIC_VALUE_PROCEDURE_NAME>$n$u$l$l$</METRIC_VALUE_PROCEDURE_NAME>
     <METRIC_AGGREGATE_OPERATOR>11</METRIC_AGGREGATE_OPERATOR>
@@ -386,7 +386,7 @@
   <DSS_METRIC_VALUE_TYPES>
     <METRIC_ID>2090808</METRIC_ID>
     <METRIC_VALUE_INDEX>1</METRIC_VALUE_INDEX>
-    <METRIC_VALUE_NAME>Data Types variations  from DB2 to Oracle</METRIC_VALUE_NAME>
+    <METRIC_VALUE_NAME>Data Types variations  from DB2 to Oracle.</METRIC_VALUE_NAME>
     <METRIC_VALUE_DESCRIPTION>See Metric documentation</METRIC_VALUE_DESCRIPTION>
     <METRIC_VALUE_PROCEDURE_NAME>$n$u$l$l$</METRIC_VALUE_PROCEDURE_NAME>
     <METRIC_AGGREGATE_OPERATOR>11</METRIC_AGGREGATE_OPERATOR>
@@ -474,7 +474,7 @@
   <DSS_METRIC_VALUE_TYPES>
     <METRIC_ID>2090812</METRIC_ID>
     <METRIC_VALUE_INDEX>1</METRIC_VALUE_INDEX>
-    <METRIC_VALUE_NAME>CREATE TABLE statement from DB2 to Oracle need to be refactored</METRIC_VALUE_NAME>
+    <METRIC_VALUE_NAME>CREATE TABLE statement from DB2 to Oracle need to be refactored.</METRIC_VALUE_NAME>
     <METRIC_VALUE_DESCRIPTION>See Metric documentation</METRIC_VALUE_DESCRIPTION>
     <METRIC_VALUE_PROCEDURE_NAME>$n$u$l$l$</METRIC_VALUE_PROCEDURE_NAME>
     <METRIC_AGGREGATE_OPERATOR>11</METRIC_AGGREGATE_OPERATOR>
@@ -658,47 +658,43 @@
     <METRIC_ID>2090802</METRIC_ID>
     <DESCRIPTION_TYPE_ID>1</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Complex Artifacts are difficult to maintain. Keeping Artifacts small and simple ensures a good readability of the code.</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Built-in SQL Functions need to be refactored.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090802</METRIC_ID>
     <DESCRIPTION_TYPE_ID>2</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#built-in-sql-functions  inside SQL files, and report a violation when any builtin function is found.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090802</METRIC_ID>
     <DESCRIPTION_TYPE_ID>3</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Review the design of the Artifact and modify the code to oracle supported</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Review the implementation and convert to oracle supported functions.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090802</METRIC_ID>
     <DESCRIPTION_TYPE_ID>4</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>db2migration  best practices. http://www.sqlines.com/db2-to-oracle/</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090802</METRIC_ID>
     <DESCRIPTION_TYPE_ID>7</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#built-in-sql-functions  inside DB2 SQL files, and report a violation when any builtin function is found.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090802</METRIC_ID>
     <DESCRIPTION_TYPE_ID>8</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Number of db2oraclemigration Module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>DB2 SQL file, Built-in SQL Functions.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090802</METRIC_ID>
     <DESCRIPTION_TYPE_ID>9</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION> Number of violation patterns found in db2migration module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Number of violation patterns found in DB2 SQL file, Built-in SQL Functions.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090804</METRIC_ID>
@@ -710,47 +706,43 @@
     <METRIC_ID>2090804</METRIC_ID>
     <DESCRIPTION_TYPE_ID>1</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Complex Artifacts are difficult to maintain. Keeping Artifacts small and simple ensures a good readability of the code.</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>SQL language elements variations need to refactored.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090804</METRIC_ID>
     <DESCRIPTION_TYPE_ID>2</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#language-elements  inside SQL files, and report a violation when any language-elements  is found.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090804</METRIC_ID>
     <DESCRIPTION_TYPE_ID>3</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Review the design of the Artifact and modify the code to oracle supported</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Review the implementation and convert to language elements variations to oracle supported elements.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090804</METRIC_ID>
     <DESCRIPTION_TYPE_ID>4</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>db2migration  best practices.  http://www.sqlines.com/db2-to-oracle</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090804</METRIC_ID>
     <DESCRIPTION_TYPE_ID>7</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#language-elements  inside SQL files, and report a violation when any language-elements  is found.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090804</METRIC_ID>
     <DESCRIPTION_TYPE_ID>8</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Number of db2oraclemigration Module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>DB2 SQL file, SQL language elements variations.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090804</METRIC_ID>
     <DESCRIPTION_TYPE_ID>9</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION> Number of violation patterns found in db2migration module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>DB2 SQL file, language elements.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090806</METRIC_ID>
@@ -768,41 +760,37 @@
     <METRIC_ID>2090806</METRIC_ID>
     <DESCRIPTION_TYPE_ID>2</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#anguage-elements   inside SQL files, and report a violation when any datetime interval expressions is found.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090806</METRIC_ID>
     <DESCRIPTION_TYPE_ID>3</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Review the design of the Artifact and modify the code to oracle supported</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Review the implementation and convert to datetime interval expressions to oracle supported elements.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090806</METRIC_ID>
     <DESCRIPTION_TYPE_ID>4</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>db2migration  best practices.   http://www.sqlines.com/db2-to-oracle</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090806</METRIC_ID>
     <DESCRIPTION_TYPE_ID>7</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#anguage-elements   inside SQL files, and report a violation when any datetime interval expressions is found.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090806</METRIC_ID>
     <DESCRIPTION_TYPE_ID>8</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Number of db2oraclemigration Module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#anguage-elements   inside SQL files, and report a violation when any datetime interval expressions is found..</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090806</METRIC_ID>
     <DESCRIPTION_TYPE_ID>9</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Number of violation patterns found in db2migration module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>DB2 SQL file, Datetime interval expressions language elements.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090808</METRIC_ID>
@@ -814,7 +802,7 @@
     <METRIC_ID>2090808</METRIC_ID>
     <DESCRIPTION_TYPE_ID>1</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Complex Artifacts are difficult to maintain. Keeping Artifacts small and simple ensures a good readability of the code.</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Data Types variations  from DB2 to Oracle.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090808</METRIC_ID>
@@ -826,35 +814,32 @@
     <METRIC_ID>2090808</METRIC_ID>
     <DESCRIPTION_TYPE_ID>3</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Review the design of the Artifact and modify the code to oracle supported</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Review the implementation and convert to oracle supported data types.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090808</METRIC_ID>
     <DESCRIPTION_TYPE_ID>4</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>db2migration  best practices.
+   http://www.sqlines.com/db2-to-oracle</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090808</METRIC_ID>
     <DESCRIPTION_TYPE_ID>7</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#data-types   inside SQL files, and report a violation when any data-types is found.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090808</METRIC_ID>
     <DESCRIPTION_TYPE_ID>8</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Number of db2oraclemigration Module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>DB2 SQL file, Data Types variations.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090808</METRIC_ID>
     <DESCRIPTION_TYPE_ID>9</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION> Number of violation patterns found in db2migration module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>DB2 SQL file, Data Types variations.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090810</METRIC_ID>
@@ -866,47 +851,44 @@
     <METRIC_ID>2090810</METRIC_ID>
     <DESCRIPTION_TYPE_ID>1</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Complex Artifacts are difficult to maintain. Keeping Artifacts small and simple ensures a good readability of the code.</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>SELECT Statements from DB2 to Oracle need to be refactored.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090810</METRIC_ID>
     <DESCRIPTION_TYPE_ID>2</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#select-statement   inside SQL files, and report a violation when any select-statement is found. </METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090810</METRIC_ID>
     <DESCRIPTION_TYPE_ID>3</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Review the design of the Artifact and modify the code to oracle supported</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Review the implementation and convert to oracle supported SELECT Statements.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090810</METRIC_ID>
     <DESCRIPTION_TYPE_ID>4</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>db2migration  best practices.
+   http://www.sqlines.com/db2-to-oracle</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090810</METRIC_ID>
     <DESCRIPTION_TYPE_ID>7</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#select-statement   inside SQL files, and report a violation when any select-statement is found.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090810</METRIC_ID>
     <DESCRIPTION_TYPE_ID>8</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Number of db2oraclemigration Module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>DB2 SQL file, select statements variations.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090810</METRIC_ID>
     <DESCRIPTION_TYPE_ID>9</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION> Number of violation patterns found in db2migration module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION> Number of violation patterns found in DB2 SQL file, select statements variations.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090812</METRIC_ID>
@@ -918,46 +900,43 @@
     <METRIC_ID>2090812</METRIC_ID>
     <DESCRIPTION_TYPE_ID>1</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Complex Artifacts are difficult to maintain. Keeping Artifacts small and simple ensures a good readability of the code.</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>CREATE TABLE statement from DB2 to Oracle need to be refactored.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090812</METRIC_ID>
     <DESCRIPTION_TYPE_ID>2</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#create-table-statement   inside SQL files, and report a violation when any create table statement is found.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090812</METRIC_ID>
     <DESCRIPTION_TYPE_ID>3</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Review the design of the Artifact and modify the code to oracle supported</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Review the implementation and  convert to oracle supported statement type.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090812</METRIC_ID>
     <DESCRIPTION_TYPE_ID>4</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>db2migration best practices.
+   http://www.sqlines.com/db2-to-oracle</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090812</METRIC_ID>
     <DESCRIPTION_TYPE_ID>7</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rule searches for http://www.sqlines.com/db2-to-oracle#create-table-statement   inside SQL files, and report a violation when any create table statement is found.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090812</METRIC_ID>
     <DESCRIPTION_TYPE_ID>8</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Number of db2oraclemigration Module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>DB2 SQL file , DDL type.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090812</METRIC_ID>
     <DESCRIPTION_TYPE_ID>9</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>Number of violation patterns found in db2migration module</METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>Number of violation patterns found in DB2 SQL file, DDL type.</METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
 </DATA>

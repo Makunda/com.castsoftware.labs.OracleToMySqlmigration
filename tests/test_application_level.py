@@ -9,7 +9,7 @@ class TestIntegration(unittest.TestCase):
 
     def test2(self):
         
-        run(kb_name='dbtwofin_local', application_name='dbcheck', engine=create_postgres_engine(port=2282))
+        run(kb_name='ibmdb_local', application_name='IBMdb', engine=create_postgres_engine(port=2282))
 #        
        
 

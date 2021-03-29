@@ -1,172 +1,151 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored' section="description">
-		<english>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </english>
+	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored.' section="description">
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#built-in-sql-functions  inside SQL files, and report a violation when any builtin function is found.</english>
 	</metric>
-	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored' section="name">
+	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored.' section="name">
 		<english>Built-in SQL Functions need to be refactored.</english>
 	</metric>
-	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored' section="output">
-		<english>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</english>
+	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored.' section="output">
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#built-in-sql-functions  inside DB2 SQL files, and report a violation when any builtin function is found.</english>
 	</metric>
-	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored' section="rationale">
-		<english>Complex Artifacts are difficult to maintain. Keeping Artifacts small and simple ensures a good readability of the code.</english>
+	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored.' section="rationale">
+		<english>Built-in SQL Functions need to be refactored.</english>
 	</metric>
-	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored' section="remediation">
-		<english>Review the design of the Artifact and modify the code to oracle supported</english>
+	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored.' section="remediation">
+		<english>Review the implementation and convert to oracle supported functions.</english>
 	</metric>
-	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored' section="associatedValueName">
-		<english> Number of violation patterns found in db2migration module</english>
+	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored.' section="associatedValueName">
+		<english>Number of violation patterns found in DB2 SQL file, Built-in SQL Functions.</english>
 	</metric>
-	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored' section="reference">
-		<english>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</english>
+	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored.' section="reference">
+		<english>db2migration  best practices. http://www.sqlines.com/db2-to-oracle/</english>
 	</metric>
-	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored' section="total">
-		<english>Number of db2oraclemigration Module</english>
+	<metric id="2090802" type="quality-rule" originalName='Built-in SQL Functions need to be refactored.' section="total">
+		<english>DB2 SQL file, Built-in SQL Functions.</english>
 	</metric>
-	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle' section="description">
-		<english>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </english>
+	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle.' section="description">
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#language-elements  inside SQL files, and report a violation when any language-elements  is found.</english>
 	</metric>
-	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle' section="name">
+	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle.' section="name">
 		<english>Converting SQL language elements variations from DB2 to oracle.</english>
 	</metric>
-	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle' section="output">
-		<english>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</english>
+	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle.' section="output">
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#language-elements  inside SQL files, and report a violation when any language-elements  is found.</english>
 	</metric>
-	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle' section="rationale">
-		<english>Complex Artifacts are difficult to maintain. Keeping Artifacts small and simple ensures a good readability of the code.</english>
+	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle.' section="rationale">
+		<english>SQL language elements variations need to refactored.</english>
 	</metric>
-	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle' section="remediation">
-		<english>Review the design of the Artifact and modify the code to oracle supported</english>
+	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle.' section="remediation">
+		<english>Review the implementation and convert to language elements variations to oracle supported elements.</english>
 	</metric>
-	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle' section="associatedValueName">
-		<english> Number of violation patterns found in db2migration module</english>
+	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle.' section="associatedValueName">
+		<english>DB2 SQL file, language elements.</english>
 	</metric>
-	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle' section="reference">
-		<english>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</english>
+	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle.' section="reference">
+		<english>db2migration  best practices.  http://www.sqlines.com/db2-to-oracle</english>
 	</metric>
-	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle' section="total">
-		<english>Number of db2oraclemigration Module</english>
+	<metric id="2090804" type="quality-rule" originalName='Converting SQL language elements variations from DB2 to oracle.' section="total">
+		<english>DB2 SQL file, SQL language elements variations.</english>
 	</metric>
-	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored' section="description">
-		<english>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </english>
+	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored.' section="description">
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#anguage-elements   inside SQL files, and report a violation when any datetime interval expressions is found.</english>
 	</metric>
-	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored' section="name">
+	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored.' section="name">
 		<english>Datetime interval expressions need to be refactored.</english>
 	</metric>
-	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored' section="output">
-		<english>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</english>
+	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored.' section="output">
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#anguage-elements   inside SQL files, and report a violation when any datetime interval expressions is found.</english>
 	</metric>
-	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored' section="rationale">
+	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored.' section="rationale">
 		<english>Datetime interval expressions need to be refactored.</english>
 	</metric>
-	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored' section="remediation">
-		<english>Review the design of the Artifact and modify the code to oracle supported</english>
+	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored.' section="remediation">
+		<english>Review the implementation and convert to datetime interval expressions to oracle supported elements.</english>
 	</metric>
-	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored' section="associatedValueName">
-		<english>Number of violation patterns found in db2migration module</english>
+	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored.' section="associatedValueName">
+		<english>DB2 SQL file, Datetime interval expressions language elements.</english>
 	</metric>
-	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored' section="reference">
-		<english>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</english>
+	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored.' section="reference">
+		<english>db2migration  best practices.   http://www.sqlines.com/db2-to-oracle</english>
 	</metric>
-	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored' section="total">
-		<english>Number of db2oraclemigration Module</english>
+	<metric id="2090806" type="quality-rule" originalName='Datetime interval expressions need to be refactored.' section="total">
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#anguage-elements   inside SQL files, and report a violation when any datetime interval expressions is found..</english>
 	</metric>
-		<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle' section="description">
+		<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle.' section="description">
 		<english>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </english>
 	</metric>
-	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle' section="name">
+	<metric id="2090808" type="quality-rule" originalName='Data Types variations from DB2 to Oracle.' section="name">
 		<english>Data Types variations  from DB2 to Oracle.</english>
 	</metric>
-	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle' section="output">
-		<english>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</english>
+	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle.' section="output">
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#data-types   inside SQL files, and report a violation when any data-types is found.</english>
 	</metric>
-	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle' section="rationale">
-		<english>Complex Artifacts are difficult to maintain. Keeping Artifacts small and simple ensures a good readability of the code.</english>
+	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle.' section="rationale">
+		<english>Data Types variations  from DB2 to Oracle.</english>
 	</metric>
-	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle' section="remediation">
-		<english>Review the design of the Artifact and modify the code to oracle supported</english>
+	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle.' section="remediation">
+		<english>Review the implementation and convert to oracle supported data types.</english>
 	</metric>
-	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle' section="associatedValueName">
-		<english> Number of violation patterns found in db2migration module</english>
+	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle.' section="associatedValueName">
+		<english>DB2 SQL file, Data Types variations.</english>
 	</metric>
-	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle' section="reference">
-		<english>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</english>
+	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle.' section="reference">
+		<english>db2migration  best practices.
+   http://www.sqlines.com/db2-to-oracle</english>
 	</metric>
-	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle' section="total">
-		<english>Number of db2oraclemigration Module</english>
+	<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle.' section="total">
+		<english>DB2 SQL file, Data Types variations.</english>
 	</metric>
 	<metric id="2090810" type="quality-rule" originalName='SELECT Statements from DB2 to Oracle need to be refactored.' section="description">
-		<english>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </english>
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#select-statement   inside SQL files, and report a violation when any select-statement is found. </english>
 	</metric>
 	<metric id="2090810" type="quality-rule" originalName='SELECT Statements from DB2 to Oracle need to be refactored.' section="name">
 		<english>SELECT Statements from DB2 to Oracle need to be refactored.</english>
 	</metric>
 	<metric id="2090810" type="quality-rule" originalName='SELECT Statements from DB2 to Oracle need to be refactored.' section="output">
-		<english>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</english>
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#select-statement   inside SQL files, and report a violation when any select-statement is found.</english>
 	</metric>
 	<metric id="2090810" type="quality-rule" originalName='SELECT Statements from DB2 to Oracle need to be refactored.' section="rationale">
-		<english>Complex Artifacts are difficult to maintain. Keeping Artifacts small and simple ensures a good readability of the code.</english>
+		<english>SELECT Statements from DB2 to Oracle need to be refactored.</english>
 	</metric>
 	<metric id="2090810" type="quality-rule" originalName='SELECT Statements from DB2 to Oracle need to be refactored.' section="remediation">
-		<english>Review the design of the Artifact and modify the code to oracle supported</english>
+		<english>Review the implementation and convert to oracle supported SELECT Statements.</english>
 	</metric>
 	<metric id="2090810" type="quality-rule" originalName='SELECT Statements from DB2 to Oracle need to be refactored.' section="associatedValueName">
-		<english> Number of violation patterns found in db2migration module</english>
+		<english> Number of violation patterns found in DB2 SQL file, select statements variations.</english>
 	</metric>
 	<metric id="2090810" type="quality-rule" originalName='SELECT Statements from DB2 to Oracle need to be refactored.' section="reference">
-		<english>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</english>
+		<english>db2migration  best practices.
+   http://www.sqlines.com/db2-to-oracle</english>
 	</metric>
 	<metric id="2090810" type="quality-rule" originalName='SELECT Statements from DB2 to Oracle need to be refactored.' section="total">
-		<english>Number of db2oraclemigration Module</english>
+		<english>DB2 SQL file, select statements variations.</english>
 	</metric>
-	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored' section="description">
-		<english>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </english>
+	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored.' section="description">
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#create-table-statement   inside SQL files, and report a violation when any create table statement is found.</english>
 	</metric>
-	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored' section="name">
+	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored.' section="name">
 		<english>CREATE TABLE statement from DB2 to Oracle need to be refactored.</english>
 	</metric>
-	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored' section="output">
-		<english>  Associated to each sql with violation, the quality rule provides:
-- The number of violation patterns
-- Bookmarks for violation patterns found in source code</english>
+	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored.' section="output">
+		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#create-table-statement   inside SQL files, and report a violation when any create table statement is found.</english>
 	</metric>
-	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored' section="rationale">
-		<english>Complex Artifacts are difficult to maintain. Keeping Artifacts small and simple ensures a good readability of the code.</english>
+	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored.' section="rationale">
+		<english>CREATE TABLE statement from DB2 to Oracle need to be refactored.</english>
 	</metric>
-	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored' section="remediation">
-		<english>Review the design of the Artifact and modify the code to oracle supported</english>
+	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored.' section="remediation">
+		<english>Review the implementation and  convert to oracle supported statement type.</english>
 	</metric>
-	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored' section="associatedValueName">
-		<english> Number of violation patterns found in db2migration module</english>
+	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored.' section="associatedValueName">
+		<english>Number of violation patterns found in DB2 SQL file, DDL type.</english>
 	</metric>
-	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored' section="reference">
-		<english>db2migration lint best practices.
-    https://github.com/fsprojects/db2oraclemigration
-    https://www.nuget.org/packages/db2oraclemigration.Core/</english>
+	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored.' section="reference">
+		<english>db2migration best practices.
+   http://www.sqlines.com/db2-to-oracle</english>
 	</metric>
-	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored' section="total">
-		<english>Number of db2oraclemigration Module</english>
+	<metric id="2090812" type="quality-rule" originalName='CREATE TABLE statement from DB2 to Oracle need to be refactored.' section="total">
+		<english>DB2 SQL file , DDL type.</english>
 	</metric>
 	
 	

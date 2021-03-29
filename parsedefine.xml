@@ -81,7 +81,7 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bCHAR\b</RegexPattern>
+		<RegexPattern>\bUNknownCHAR\b</RegexPattern>
 		<propertyname>CHAR</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
@@ -401,7 +401,7 @@
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>
 	<Search>
-		<RegexPattern>\bVARCHAR\b</RegexPattern>
+		<RegexPattern>\bunknownVARCHAR\b</RegexPattern>
 		<propertyname>VARCHAR</propertyname>
 		<Rulename>Built_in_SQL_Functions_variations</Rulename>
 	</Search>

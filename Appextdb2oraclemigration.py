@@ -28,6 +28,17 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
     def end_application(self, application):
         logging.debug("running code at the end of an application in db2oraclemigration")
         self.setdeclareproperty(application);
+        s= self.get_plugin()
+        #logging.info(str(s.get_plugin_directory()))
+        try:
+            self.xmlfile =str(s.get_plugin_directory())+ "\\parsedefine.xml" 
+            if (os.path.isfile(self.xmlfile)):
+                        tree = ET.parse(self.xmlfile, ET.XMLParser(encoding="UTF-8"))
+                        root=tree.getroot()
+            logging.debug(str(self.xmlfile));
+        except ET.ParseError as err:
+            logging.info(": error  saving property violation   : %s", str(err))  
+            return tree
         for o in application.search_objects(category='sourceFile'):
           
             # check if file is analyzed source code, or if it generated (Unknown)
@@ -38,21 +49,13 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                 continue
             #cast.analysers.log.debug("file found: >" + str(o.get_path()))
             logging.debug("file found: >" + str(o.get_path()))
-            self.getconfigsearch(o, application)
+            self.getconfigsearch(o, application, root)
             #self.scan_Sql(application, o)               
             
-    def getconfigsearch(self,  file, application): 
+    def getconfigsearch(self,  file, application, root): 
         logging.info("file start")
-        s= self.get_plugin()
-        #logging.info(str(s.get_plugin_directory()))
-        self.xmlfile =str(s.get_plugin_directory())+ "\\parsedefine.xml" 
-        logging.debug(str(self.xmlfile));
+       
         try:
-           
-            if (os.path.isfile(self.xmlfile)):
-                    tree = ET.parse(self.xmlfile, ET.XMLParser(encoding="UTF-8"))
-                    root=tree.getroot()
-                    
                     for group in root.findall('Search'):
                         self.sregex = unescape(group.find('RegexPattern').text)
                         logging.debug("---"+str(self.sregex)+ "---")
@@ -68,7 +71,7 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                                 self.setprop(application, file, sobjname, sviolation); 
                                 
         except Exception as e:
-            logging.debug(": error  db2Sql extension  set : %s", str(e))  
+            logging.info(": error  db2Sql extension  set : %s", str(e))  
             return  
         # Final reporting in ApplicationPlugins.castlog
         
@@ -98,8 +101,9 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                     logging.info("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+str(getvalue))
                
 #       
-            except ValueError:
-                    logging.info ("error saving property")
+            except Exception as e:
+                logging.info(": error  saving property violation   : %s", str(e))  
+                return  
     
     def setdeclareproperty(self, application):
         application.declare_property_ownership('dboraclemigrationScript.CONCAT',["sourceFile"])

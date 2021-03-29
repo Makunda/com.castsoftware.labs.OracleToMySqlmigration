@@ -116,7 +116,7 @@
       <description>Custom category for DB2 to oracle migration</description>
        <property name="CONCAT" type="string" rid="430">
             <description>Converting SQL language elements from DB2 CONCAT to Oracle symbol</description>
-            <attribute name="INF_TYPE" intValue="301"/>
+            <attribute name="INF_TYPE" intValue="2090301"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -125,7 +125,7 @@
       
         <property name="NEXT_VALUE" type="string" rid="431">
             <description>Converting SQL language elements from DB2 NEXT VALUE  to Oracle NEXTVAL </description>
-            <attribute name="INF_TYPE" intValue="302"/>
+            <attribute name="INF_TYPE" intValue="2090302"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -134,7 +134,7 @@
       
         <property name="RESULT_SET_LOCATOR" type="string" rid="432">
             <description>Converting SQL language elements from DB2 RESULT_SET_LOCATOR to Oracle SYS_REFCURSOR </description>
-            <attribute name="INF_TYPE" intValue="303"/>
+            <attribute name="INF_TYPE" intValue="2090303"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -143,7 +143,7 @@
       
        <property name="DAYS" type="string" rid="595">
             <description>Converting Datetime interval expressions from DAYS to Oracle NUMTODSINTERVAL</description>
-            <attribute name="INF_TYPE" intValue="904"/>
+            <attribute name="INF_TYPE" intValue="2090904"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -152,7 +152,7 @@
       
        <property name="MINUTES" type="string" rid="592">
             <description>Converting Datetime interval expressions from DB2 MINUTES to Oracle NUMTODSINTERVAL</description>
-            <attribute name="INF_TYPE" intValue="305"/>
+            <attribute name="INF_TYPE" intValue="2090305"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -161,7 +161,7 @@
       
        <property name="SYSDUMMY1" type="string" rid="593">
             <description>Converting SQL SELECT statement from DB2 SYSDUMMY1 to Oracle DUAL table</description>
-            <attribute name="INF_TYPE" intValue="306"/>
+            <attribute name="INF_TYPE" intValue="2090306"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -170,7 +170,7 @@
       
        <property name="WITH_UR" type="string" rid="594">
             <description>Converting SQL SELECT statement from DB2 WITH UR  CS to Oracle no equivalent</description>
-            <attribute name="INF_TYPE" intValue="307"/>
+            <attribute name="INF_TYPE" intValue="2090307"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -179,7 +179,7 @@
       
        <property name="FETCH" type="string" rid="501">
             <description>Converting SQL SELECT Statements DB2 Fetch  to oracle ROWNUM and subquery</description>
-            <attribute name="INF_TYPE" intValue="35"/>
+            <attribute name="INF_TYPE" intValue="209035"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -187,7 +187,7 @@
       </property>
 	   <property name="EXCEPT" type="string" rid="502">
             <description>Converting SQL SELECT statements DB2 EXCEPT  to Oracle MINUS</description>
-            <attribute name="INF_TYPE" intValue="10"/>
+            <attribute name="INF_TYPE" intValue="2090010"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -195,7 +195,7 @@
       </property>
 	  <property name="ATANH" type="string" rid="503">
             <description>Converting Builtin functions DB2 ATANH to oracle no equivalent</description>
-            <attribute name="INF_TYPE" intValue="340"/>
+            <attribute name="INF_TYPE" intValue="2090340"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -203,7 +203,7 @@
       </property>
 	   <property name="BIGINT" type="string" rid="504">
             <description>Converting Builtin functions DB2 BIGINT to oracle TRUNC</description>
-            <attribute name="INF_TYPE" intValue="12"/>
+            <attribute name="INF_TYPE" intValue="2090012"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -211,7 +211,7 @@
       </property>
 	  <property name="BITANDNOT" type="string" rid="505">
             <description>Converting Builtin functions DB2 BITANDNOT in oracle no equivalent  </description>
-            <attribute name="INF_TYPE" intValue="13"/>
+            <attribute name="INF_TYPE" intValue="2090013"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -220,7 +220,7 @@
 	 
 	   <property name="BITOR" type="string" rid="506">
             <description>Converting Builtin functions DB2 BITOR in oracle no equivalent  </description>
-            <attribute name="INF_TYPE" intValue="14"/>
+            <attribute name="INF_TYPE" intValue="2090014"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -228,7 +228,7 @@
       </property>
 	   <property name="BITNOT" type="string" rid="508">
             <description>Converting Builtin functions DB2 BITNOT to oracle no equivalent  </description>
-            <attribute name="INF_TYPE" intValue="15"/>
+            <attribute name="INF_TYPE" intValue="2090015"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -236,7 +236,7 @@
       </property>
 	   <property name="BITXOR" type="string" rid="509">
             <description>Converting Builtin functions DB2 BITXOR in oracle no equivalent  </description>
-            <attribute name="INF_TYPE" intValue="16"/>
+            <attribute name="INF_TYPE" intValue="2090016"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -245,7 +245,7 @@
 	  
 	   <property name="BLOB" type="string" rid="510">
             <description>Converting Builtin functions DB2 BLOB to oracle TO_BLOB  </description>
-            <attribute name="INF_TYPE" intValue="17"/>
+            <attribute name="INF_TYPE" intValue="2090017"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -254,7 +254,7 @@
 	  
 	   <property name="CHAR" type="string" rid="511">
             <description>Converting Builtin functions DB2 CHAR to oracle RPAD   </description>
-            <attribute name="INF_TYPE" intValue="18"/>
+            <attribute name="INF_TYPE" intValue="2090018"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -264,7 +264,7 @@
 		  
 	   <property name="CHARACTER_LENGTH" type="string" rid="513">
             <description>Converting Builtin functions DB2 CHARACTER_LENGTH to oracle LENGTH  </description>
-            <attribute name="INF_TYPE" intValue="19"/>
+            <attribute name="INF_TYPE" intValue="2090019"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -273,7 +273,7 @@
 	
 	   <property name="CHAR_LENGTH" type="string" rid="514">
             <description>Converting Builtin functions DB2 CHAR_LENGTH to oracle LENGTH2  </description>
-            <attribute name="INF_TYPE" intValue="20"/>
+            <attribute name="INF_TYPE" intValue="2090020"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -284,7 +284,7 @@
 	  
 	   <property name="CLOB" type="string" rid="516">
             <description>Converting Builtin functions DB2 CLOB to oracle TO_CLOB  </description>
-            <attribute name="INF_TYPE" intValue="21"/>
+            <attribute name="INF_TYPE" intValue="2090021"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -293,7 +293,7 @@
 	  
 	   <property name="COT" type="string" rid="517">
             <description>Converting Builtin functions DB2 COT to oracle 1TAN  </description>
-            <attribute name="INF_TYPE" intValue="22"/>
+            <attribute name="INF_TYPE" intValue="2090022"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -302,7 +302,7 @@
 	  
 	   <property name="CURRENT_DATE" type="string" rid="518">
             <description>Converting Builtin functions DB2 CURRENT DATE to oracle TRUNC</description>
-            <attribute name="INF_TYPE" intValue="23"/>
+            <attribute name="INF_TYPE" intValue="2090023"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -311,7 +311,7 @@
 	 
 	   <property name="CURRENT_SERVER" type="string" rid="519">
             <description>Converting Builtin functions DB2 CURRENT SERVER to oracle SYS_CONTEXT</description>
-            <attribute name="INF_TYPE" intValue="24"/>
+            <attribute name="INF_TYPE" intValue="2090024"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -320,7 +320,7 @@
 	  	
 	   <property name="SQLID" type="string" rid="520">
             <description>Converting Builtin functions DB2 SQLID to oracle CURRENT_SCHEMA</description>
-            <attribute name="INF_TYPE" intValue="25"/>
+            <attribute name="INF_TYPE" intValue="2090025"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -329,7 +329,7 @@
 	  	 
 	   <property name="TIME" type="string" rid="521">
             <description>Converting Builtin functions DB2 TIME to oracle SYSTIMESTAMP</description>
-            <attribute name="INF_TYPE" intValue="39"/>
+            <attribute name="INF_TYPE" intValue="2090039"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -338,7 +338,7 @@
 	  	 
 	   <property name="CURRENT_USER" type="string" rid="522">
             <description>Converting Builtin functions DB2 CURRENT USER to oracle USER</description>
-            <attribute name="INF_TYPE" intValue="26"/>
+            <attribute name="INF_TYPE" intValue="2090026"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -347,7 +347,7 @@
 	  	
 	   <property name="CURSOR_ROWCOUNT" type="string" rid="523">
             <description>Converting Builtin functions DB2 CURSOR_ROWCOUNT to oracle  CUR ROWCOUNT</description>
-            <attribute name="INF_TYPE" intValue="27"/>
+            <attribute name="INF_TYPE" intValue="2090027"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -356,7 +356,7 @@
 	  	
 	   <property name="DATE" type="string" rid="524">
             <description>Converting Builtin functions DB2 DATE to oracle TRUNC </description>
-            <attribute name="INF_TYPE" intValue="28"/>
+            <attribute name="INF_TYPE" intValue="2090028"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -365,7 +365,7 @@
 	  	 
 	   <property name="DAY" type="string" rid="525">
             <description>Converting Builtin functions DB2 DAY to oracle EXTRACT</description>
-            <attribute name="INF_TYPE" intValue="29"/>
+            <attribute name="INF_TYPE" intValue="2090029"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -374,7 +374,7 @@
 	  	 
 	   <property name="DAYNAME" type="string" rid="526">
             <description>Converting Builtin functions DB2 DAYNAME to oracleTO_CHAR  </description>
-            <attribute name="INF_TYPE" intValue="30"/>
+            <attribute name="INF_TYPE" intValue="2090030"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -383,7 +383,7 @@
 	  	 
 	   <property name="DAYOF" type="string" rid="527">
             <description>Converting Builtin functions DB2 DAYOF to oracle TO_CHAR </description>
-            <attribute name="INF_TYPE" intValue="31"/>
+            <attribute name="INF_TYPE" intValue="2090031"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -392,7 +392,7 @@
 	  	
 	   <property name="DBCLOB" type="string" rid="528">
             <description>Converting Builtin functions DB2 DBCLOB to oracle TO_CLOB </description>
-            <attribute name="INF_TYPE" intValue="32"/>
+            <attribute name="INF_TYPE" intValue="2090032"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -401,7 +401,7 @@
 	  	  
 	   <property name="DECFLOAT" type="string" rid="529">
             <description>Converting Builtin functions DB2 DECFLOAT to oracle TO_NUMBER </description>
-            <attribute name="INF_TYPE" intValue="33"/>
+            <attribute name="INF_TYPE" intValue="2090033"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -410,7 +410,7 @@
 	  
 	   <property name="DECIMAL" type="string" rid="530">
             <description>Converting Builtin functions DB2 DECIMAL to oracle TO NUMBER </description>
-            <attribute name="INF_TYPE" intValue="34"/>
+            <attribute name="INF_TYPE" intValue="2090034"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -420,7 +420,7 @@
      
 	  <property name="DIGITS" type="string" rid="531">
             <description>Converting Builtin functions DB2 DIGITS to oracle TRANSLATE </description>
-            <attribute name="INF_TYPE" intValue="40"/>
+            <attribute name="INF_TYPE" intValue="2090040"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -428,7 +428,7 @@
       </property>
 	  <property name="DOUBLE" type="string" rid="532">
             <description>Converting Builtin functions DB2 DOUBLE to oracle TO NUMBER </description>
-            <attribute name="INF_TYPE" intValue="41"/>
+            <attribute name="INF_TYPE" intValue="2090041"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -436,7 +436,7 @@
       </property>
 	    <property name="EMPTY_DBCLOB" type="string" rid="533">
             <description>Converting Builtin functions DB2 EMPTY_DBCLOB to oracle EMPTY_CLOB</description>
-            <attribute name="INF_TYPE" intValue="42"/>
+            <attribute name="INF_TYPE" intValue="2090042"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -444,7 +444,7 @@
       </property>
 	  <property name="EMPTYNCLOB" type="string" rid="534">
             <description>Converting Builtin functions DB2 EMPTY_NCLOB to oracle EMPTY_CLOB </description>
-            <attribute name="INF_TYPE" intValue="43"/>
+            <attribute name="INF_TYPE" intValue="2090043"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -452,7 +452,7 @@
       </property>
 	  <property name="FLOAT" type="string" rid="535">
             <description>Converting Builtin functions DB2 FLOAT to oracle TO_NUMBER </description>
-            <attribute name="INF_TYPE" intValue="44"/>
+            <attribute name="INF_TYPE" intValue="2090044"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -460,7 +460,7 @@
       </property>
 	  <property name="HEX" type="string" rid="536">
             <description>Converting Builtin functions DB2 HEX in oracle no equivalent </description>
-            <attribute name="INF_TYPE" intValue="45"/>
+            <attribute name="INF_TYPE" intValue="2090045"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -468,7 +468,7 @@
       </property>
 	  <property name="HOUR" type="string" rid="537">
             <description>Converting Builtin functions DB2 HOUR to oracle EXTRACT </description>
-            <attribute name="INF_TYPE" intValue="46"/>
+            <attribute name="INF_TYPE" intValue="2090046"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -476,7 +476,7 @@
       </property>
 	  <property name="INSERT" type="string" rid="538">
             <description>Converting Builtin functions DB2 INSERT in oracle no equivalent </description>
-            <attribute name="INF_TYPE" intValue="47"/>
+            <attribute name="INF_TYPE" intValue="2090047"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -484,7 +484,7 @@
       </property>
 	  <property name="INT" type="string" rid="539">
             <description>Converting Builtin functions DB2 INT to oracle TRUNC </description>
-            <attribute name="INF_TYPE" intValue="48"/>
+            <attribute name="INF_TYPE" intValue="2090048"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -492,7 +492,7 @@
       </property>
 	  <property name="JULIAN" type="string" rid="540">
             <description>Converting Builtin functions DB2 JULIAN to oracle TO_NUMBER </description>
-            <attribute name="INF_TYPE" intValue="49"/>
+            <attribute name="INF_TYPE" intValue="2090049"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -500,7 +500,7 @@
       </property>
 	  <property name="LCASE" type="string" rid="541">
             <description>Converting Builtin functions DB2 LCASE to oracle LOWER </description>
-            <attribute name="INF_TYPE" intValue="50"/>
+            <attribute name="INF_TYPE" intValue="2090050"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -508,7 +508,7 @@
       </property>
 	   <property name="LEFT" type="string" rid="542">
             <description>Converting Builtin functions DB2 LEFT to oracle SUBSTR </description>
-            <attribute name="INF_TYPE" intValue="51"/>
+            <attribute name="INF_TYPE" intValue="2090051"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -516,7 +516,7 @@
 			</property>
        <property name="LOCATE" type="string" rid="543">
             <description>Converting Builtin functions DB2 LOCATE to oracle INSTR </description>
-            <attribute name="INF_TYPE" intValue="52"/>
+            <attribute name="INF_TYPE" intValue="2090052"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -524,7 +524,7 @@
 			</property>
        <property name="LOG10" type="string" rid="544">
             <description>Converting Builtin functions DB2 LOG10 to oracle LOG </description>
-            <attribute name="INF_TYPE" intValue="53"/>
+            <attribute name="INF_TYPE" intValue="2090053"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -532,7 +532,7 @@
 			</property>
        <property name="LONG_VARCHAR" type="string" rid="545">
             <description>Converting Builtin functions DB2 LONG_VARCHAR to oracle TO_CLOB </description>
-            <attribute name="INF_TYPE" intValue="54"/>
+            <attribute name="INF_TYPE" intValue="2090054"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -540,7 +540,7 @@
 			</property>
       <property name="LONG_VARGRAPHIC" type="string" rid="546">
             <description>Converting Builtin functions DB2 LONG_VARGRAPHIC to oracle TO_CLOB </description>
-            <attribute name="INF_TYPE" intValue="55"/>
+            <attribute name="INF_TYPE" intValue="2090055"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -548,7 +548,7 @@
 			</property>
 			 <property name="MAX" type="string" rid="547">
             <description>Converting Builtin functions DB2 MAX to oracle GREATEST </description>
-            <attribute name="INF_TYPE" intValue="56"/>
+            <attribute name="INF_TYPE" intValue="2090056"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -556,7 +556,7 @@
 			</property>
    <property name="MIN" type="string" rid="548">
             <description>Converting Builtin functions DB2 MIN to oracle LEAST </description>
-            <attribute name="INF_TYPE" intValue="57"/>
+            <attribute name="INF_TYPE" intValue="2090057"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -564,7 +564,7 @@
 			</property>
       <property name="MINUTE" type="string" rid="549">
             <description>Converting Builtin functions DB2 MINUTE to oracle EXTRACT </description>
-            <attribute name="INF_TYPE" intValue="58"/>
+            <attribute name="INF_TYPE" intValue="2090058"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -572,7 +572,7 @@
 			</property>
       <property name="MONTH" type="string" rid="550">
             <description>Converting Builtin functions DB2 MONTH to oracle EXTRACT </description>
-            <attribute name="INF_TYPE" intValue="59"/>
+            <attribute name="INF_TYPE" intValue="2090059"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -581,7 +581,7 @@
 	 
 	   <property name="MONTHNAME" type="string" rid="552">
             <description>Converting Builtin functions DB2 MONTHNAME to oracle TO_CHAR </description>
-            <attribute name="INF_TYPE" intValue="61"/>
+            <attribute name="INF_TYPE" intValue="2090061"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -589,7 +589,7 @@
       </property>
 	    <property name="MULTIPLY_ALT" type="string" rid="553">
             <description>Converting Builtin functions DB2 MULTIPLY_ALT to oracle no equivalent </description>
-            <attribute name="INF_TYPE" intValue="62"/>
+            <attribute name="INF_TYPE" intValue="2090062"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -597,7 +597,7 @@
       </property>
 	   <property name="MICROSECOND" type="string" rid="554">
             <description>Converting Builtin functions DB2 MICROSECOND to oracle TO_NUMBER </description>
-            <attribute name="INF_TYPE" intValue="63"/>
+            <attribute name="INF_TYPE" intValue="2090063"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -605,7 +605,7 @@
       </property>
 	    <property name="MIDNIGHT_SECONDS" type="string" rid="555">
             <description>Converting Builtin functions DB2 MIDNIGHT_SECONDS to oracle TO_NUMBER </description>
-            <attribute name="INF_TYPE" intValue="64"/>
+            <attribute name="INF_TYPE" intValue="2090064"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -613,7 +613,7 @@
       </property>
 	   <property name="NCHAR" type="string" rid="556">
             <description>Converting Builtin functions DB2 NCHAR to oracle TO_NCHAR </description>
-            <attribute name="INF_TYPE" intValue="65"/>
+            <attribute name="INF_TYPE" intValue="2090065"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -622,7 +622,7 @@
 	
 	   <property name="NCLOB" type="string" rid="558">
             <description>Converting Builtin functions DB2 NCLOB to oracle TO_NCLOB </description>
-            <attribute name="INF_TYPE" intValue="67"/>
+            <attribute name="INF_TYPE" intValue="2090067"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -630,7 +630,7 @@
       </property>
 	 <property name="NVARCHAR" type="string" rid="559">
             <description>Converting Builtin functions DB2 NVARCHAR to oracle TO_NCHAR </description>
-            <attribute name="INF_TYPE" intValue="68"/>
+            <attribute name="INF_TYPE" intValue="2090068"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -638,7 +638,7 @@
       </property> 
 	  <property name="NVL" type="string" rid="560">
             <description>Converting Builtin functions DB2 NVL to oracle COALESCE </description>
-            <attribute name="INF_TYPE" intValue="69"/>
+            <attribute name="INF_TYPE" intValue="2090069"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -647,7 +647,7 @@
 	  
 	   <property name="OCT_LENGHT" type="string" rid="561">
             <description>Converting Builtin functions DB2 OCT_LENGTH to oracle LENGTHB </description>
-            <attribute name="INF_TYPE" intValue="71"/>
+            <attribute name="INF_TYPE" intValue="2090071"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -656,7 +656,7 @@
      
 	  <property name="QUARTER" type="string" rid="562">
             <description>Converting Builtin functions DB2 QUARTER to oracle TO_NUMBER </description>
-            <attribute name="INF_TYPE" intValue="75"/>
+            <attribute name="INF_TYPE" intValue="2090075"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -664,7 +664,7 @@
       </property>
 	  <property name="RADIANS" type="string" rid="563">
             <description>Converting Builtin functions DB2 RADIANS in oracle no equivalent </description>
-            <attribute name="INF_TYPE" intValue="76"/>
+            <attribute name="INF_TYPE" intValue="2090076"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -672,7 +672,7 @@
       </property>
 	   <property name="RAISE_ERROR" type="string" rid="564">
             <description>Converting Builtin functions DB2 RAISE_ERROR to oracle RAISE_APPLICATION_ERROR  </description>
-            <attribute name="INF_TYPE" intValue="77"/>
+            <attribute name="INF_TYPE" intValue="2090077"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -680,7 +680,7 @@
       </property>
 	  <property name="RAND" type="string" rid="565">
             <description>Converting Builtin functions DB2 RAND to oracle DBMS_RANDOM VALUE </description>
-            <attribute name="INF_TYPE" intValue="78"/>
+            <attribute name="INF_TYPE" intValue="2090078"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -689,7 +689,7 @@
       
     <property name="FunctionREAL" type="string" rid="566">
             <description>Converting Builtin functions DB2 REAL to oracle TO_NUMBER </description>
-            <attribute name="INF_TYPE" intValue="79"/>
+            <attribute name="INF_TYPE" intValue="2090079"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -697,7 +697,7 @@
       </property>
 	  <property name="REPEAT" type="string" rid="567">
             <description>Converting Builtin functions DB2 REPEAT to oracle RPAD</description>
-            <attribute name="INF_TYPE" intValue="80"/>
+            <attribute name="INF_TYPE" intValue="2090080"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -705,7 +705,7 @@
       </property>
 	  <property name="RIGHT" type="string" rid="568">
             <description>Converting Builtin functions DB2 RIGHT to oracle SUBSTER  </description>
-            <attribute name="INF_TYPE" intValue="81"/>
+            <attribute name="INF_TYPE" intValue="2090081"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -713,7 +713,7 @@
       </property>
 	   <property name="SECOND" type="string" rid="569">
             <description>Converting Builtin functions DB2 SECOND to oracle TRUNC  </description>
-            <attribute name="INF_TYPE" intValue="82"/>
+            <attribute name="INF_TYPE" intValue="2090082"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -721,7 +721,7 @@
       </property>
 	  <property name="FunctionSMALLINT" type="string" rid="570">
             <description>Converting Builtin functions DB2 SMALLINT to oracle TRUNC </description>
-            <attribute name="INF_TYPE" intValue="83"/>
+            <attribute name="INF_TYPE" intValue="2090083"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -729,7 +729,7 @@
       </property>
 	   <property name="SPACE" type="string" rid="571">
             <description>Converting Builtin functions DB2 SPACE to oracle RPAD </description>
-            <attribute name="INF_TYPE" intValue="84"/>
+            <attribute name="INF_TYPE" intValue="2090084"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -737,7 +737,7 @@
       </property>
 	  <property name="STRIP" type="string" rid="572">
             <description>Converting Builtin functions DB2 STRIP to oracle TRIM </description>
-            <attribute name="INF_TYPE" intValue="85"/>
+            <attribute name="INF_TYPE" intValue="2090085"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -748,7 +748,7 @@
       
       <property name="TIMEStamp" type="string" rid="573">
             <description>Converting Builtin functions DB2 TIME to oracle TO_TIMESTAMP </description>
-            <attribute name="INF_TYPE" intValue="86"/>
+            <attribute name="INF_TYPE" intValue="2090086"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -756,7 +756,7 @@
       </property>
 	 <property name="TIMESTAMPDIFF" type="string" rid="574">
             <description>Converting Builtin functions DB2 TIMESTAMPDIFF to oracle no equivalent			</description>
-            <attribute name="INF_TYPE" intValue="89"/>
+            <attribute name="INF_TYPE" intValue="2090089"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -764,7 +764,7 @@
       </property>
 	  <property name="TRUNC_TIMESTAMP" type="string" rid="575">
             <description>Converting Builtin functions DB2 TRUNC_TIMESTAMP to oracle TRUNC </description>
-            <attribute name="INF_TYPE" intValue="90"/>
+            <attribute name="INF_TYPE" intValue="2090090"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -772,7 +772,7 @@
       </property>
 	  <property name="TRUNCATE" type="string" rid="576">
             <description>Converting Builtin functions DB2 TRUNCATE to oracle TRUNC </description>
-            <attribute name="INF_TYPE" intValue="91"/>
+            <attribute name="INF_TYPE" intValue="2090091"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -780,7 +780,7 @@
       </property>
 	  <property name="UCASE" type="string" rid="577">
             <description>Converting Builtin functions DB2 UCASE to oracle UPPER </description>
-            <attribute name="INF_TYPE" intValue="92"/>
+            <attribute name="INF_TYPE" intValue="2090092"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -788,7 +788,7 @@
       </property>
 	  <property name="VALUE" type="string" rid="578">
             <description>Converting Builtin functions DB2 VALUE to oracle COALESCE </description>
-            <attribute name="INF_TYPE" intValue="93"/>
+            <attribute name="INF_TYPE" intValue="2090093"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -796,7 +796,7 @@
       </property>
 	  <property name="VARCHAR" type="string" rid="579">
             <description>Converting Builtin functions DB2 VARCHAR to oracle TO_CHAR </description>
-            <attribute name="INF_TYPE" intValue="94"/>
+            <attribute name="INF_TYPE" intValue="2090094"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -804,7 +804,7 @@
       </property>
 	  <property name="VARCHAR_BIT_FORMER" type="string" rid="580">
             <description>Converting Builtin functions DB2 VARCHAR_BIT_FORMER  to oracle HEXTORAW </description>
-            <attribute name="INF_TYPE" intValue="95"/>
+            <attribute name="INF_TYPE" intValue="2090095"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -812,7 +812,7 @@
       </property>
 	  <property name="VARCHAR_FORMAT" type="string" rid="581">
             <description>Converting Builtin functions DB2 VARCHAR_FORMAT  to oracle TO_CHAR </description>
-            <attribute name="INF_TYPE" intValue="96"/>
+            <attribute name="INF_TYPE" intValue="2090096"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -820,7 +820,7 @@
       </property>
 	  <property name="VARCHAR_FORMAT_BIT" type="string" rid="582">
             <description>Converting Builtin functions DB2 VARCHAR_FORMAT_BIT  to oracle RAWTOHEX </description>
-            <attribute name="INF_TYPE" intValue="97"/>
+            <attribute name="INF_TYPE" intValue="2090097"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -828,7 +828,7 @@
       </property>
 	  <property name="VARGRAPHIC" type="string" rid="583">
             <description>Converting Builtin functions DB2 VARGRAPHIC  to oracle TO_NCHAR </description>
-            <attribute name="INF_TYPE" intValue="98"/>
+            <attribute name="INF_TYPE" intValue="2090098"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -836,7 +836,7 @@
       </property>
 	  <property name="WEEK" type="string" rid="584">
             <description>Converting Builtin functions DB2 WEEK  to oracle HEXTORAW </description>
-            <attribute name="INF_TYPE" intValue="99"/>
+            <attribute name="INF_TYPE" intValue="2090099"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -844,7 +844,7 @@
       </property>
 	  <property name="XMLDOCUMENT" type="string" rid="585">
             <description>Converting Builtin functions DB2 XMLDOCUMENT  to oracle no equivalent </description>
-            <attribute name="INF_TYPE" intValue="100"/>
+            <attribute name="INF_TYPE" intValue="2090100"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -853,7 +853,7 @@
 	 
 	  <property name="XMLNAMESPACES" type="string" rid="586">
             <description>Converting Builtin functions DB2 XMLNAMESPACES  to oracle  no equivalent </description>
-            <attribute name="INF_TYPE" intValue="101"/>
+            <attribute name="INF_TYPE" intValue="2090101"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -862,7 +862,7 @@
 	  
 	  <property name="XMLROW" type="string" rid="591">
             <description>Converting Builtin functions DB2 XMLROW  to oracle  no equivalent </description>
-            <attribute name="INF_TYPE" intValue="102"/>
+            <attribute name="INF_TYPE" intValue="2090102"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -871,7 +871,7 @@
 	 
 	  <property name="XMLTEXT" type="string" rid="587">
             <description>Converting Builtin functions DB2 XMLTEXT  to oracle  no equivalent </description>
-            <attribute name="INF_TYPE" intValue="197"/>
+            <attribute name="INF_TYPE" intValue="2090197"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -880,7 +880,7 @@
 	 
 	  <property name="XMLVALIDATE" type="string" rid="588">
             <description>Converting Builtin functions DB2 XMLVALIDATE  to oracle no equivalent </description>
-            <attribute name="INF_TYPE" intValue="198"/>
+            <attribute name="INF_TYPE" intValue="2090198"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -889,7 +889,7 @@
 	 
 	  <property name="XMLXMLXSROBJECTID" type="string" rid="589">
             <description>Converting Builtin functions DB2 XMLXMLXSROBJECTID to oracle no equivalent </description>
-            <attribute name="INF_TYPE" intValue="199"/>
+            <attribute name="INF_TYPE" intValue="2090199"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -898,7 +898,7 @@
 	 
 	  <property name="YEAR" type="string" rid="590">
             <description>Converting Builtin functions DB2 YEAR  to oracle EXTRACT </description>
-            <attribute name="INF_TYPE" intValue="200"/>
+            <attribute name="INF_TYPE" intValue="2090200"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -906,7 +906,7 @@
       </property> 
        <property name="DATATYPEBIGINT" type="string" rid="690">
             <description>Converting Datatype DB2 BIGINT  to oracle NUMBER</description>
-            <attribute name="INF_TYPE" intValue="982"/>
+            <attribute name="INF_TYPE" intValue="2090982"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -914,7 +914,7 @@
       </property> 
 	  <property name="CHAR_FOR_BIT_DATA" type="string" rid="610">
             <description>Converting datatype DB2 CHAR_ FOR _BIT _DATA  to oracle RAW </description>
-            <attribute name="INF_TYPE" intValue="983"/>
+            <attribute name="INF_TYPE" intValue="2090983"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -922,7 +922,7 @@
       </property> 
 	  <property name="CHAACTER_VARYING" type="string" rid="611">
             <description>Converting Datatype DB2 CHRACTER_VARYING to oracle VARCHAR </description>
-            <attribute name="INF_TYPE" intValue="984"/>
+            <attribute name="INF_TYPE" intValue="2090984"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -931,7 +931,7 @@
 	
 	  <property name="DATATYPEDBCLOB" type="string" rid="612">
             <description>Converting Datype DB2 DBCLOB  to oracle NCLOB </description>
-            <attribute name="INF_TYPE" intValue="985"/>
+            <attribute name="INF_TYPE" intValue="2090985"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -939,7 +939,7 @@
       </property> 
 	  <property name="DATATYPEDECIMAL" type="string" rid="613">
             <description>Converting Datatype DB2 DECIMAL  to oracle NUMBER </description>
-            <attribute name="INF_TYPE" intValue="986"/>
+            <attribute name="INF_TYPE" intValue="2090986"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -947,7 +947,7 @@
       </property> 
 	  <property name="DATATYPEDECFLOAT" type="string" rid="689">
             <description>Converting Datatype DB2 DECFLOAT to oracle NUMBER </description>
-            <attribute name="INF_TYPE" intValue="987"/>
+            <attribute name="INF_TYPE" intValue="20900987"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -955,7 +955,7 @@
       </property> 
 	  <property name="DATATYPEFLOAT" type="string" rid="597">
             <description>Converting Datatype DB2 FLOAT to oracle BINARY_DOUBLE </description>
-            <attribute name="INF_TYPE" intValue="988"/>
+            <attribute name="INF_TYPE" intValue="2090988"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -963,7 +963,7 @@
       </property> 
 	  <property name="DATATYPEGRAPHIC" type="string" rid="598">
             <description>Converting Datatype DB2 GRAPHIC  to oracle BINARY_DOUBLE</description>
-            <attribute name="INF_TYPE" intValue="989"/>
+            <attribute name="INF_TYPE" intValue="2090989"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -971,7 +971,7 @@
       </property> 
 	  <property name="INTEGER" type="string" rid="599">
             <description>Converting Datatype DB2 INTEGER to oracle NUMBER </description>
-            <attribute name="INF_TYPE" intValue="990"/>
+            <attribute name="INF_TYPE" intValue="2090990"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -979,7 +979,7 @@
       </property> 
 	  <property name="NCHAR_VARYING" type="string" rid="600">
             <description>Converting Datatype DB2 NCHAR_VARYING  to oracle NVARCHAR</description>
-            <attribute name="INF_TYPE" intValue="991"/>
+            <attribute name="INF_TYPE" intValue="2090991"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -987,7 +987,7 @@
       </property> 
 	 <property name="NUMERIC" type="string" rid="601">
             <description>Converting Datatype DB2 NUMERIC  to oracle NUMBER</description>
-            <attribute name="INF_TYPE" intValue="992"/>
+            <attribute name="INF_TYPE" intValue="2090992"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -995,7 +995,7 @@
       </property> 
 	  <property name="REAL" type="string" rid="602">
             <description>Converting Datatype DB2 REAL  to oracle BINARY_FLOAT</description>
-            <attribute name="INF_TYPE" intValue="993"/>
+            <attribute name="INF_TYPE" intValue="2090993"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -1003,7 +1003,7 @@
       </property> 
 	  <property name="SMALLINT" type="string" rid="603">
             <description>Converting Datatype DB2 SMALLINT  to oracle NUMBER</description>
-            <attribute name="INF_TYPE" intValue="994"/>
+            <attribute name="INF_TYPE" intValue="2090994"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -1011,7 +1011,7 @@
       </property> 
 	  <property name="DATATYPETIME" type="string" rid="604">
             <description>Converting Datatype DB2 TIME  to TIMESTAMP</description>
-            <attribute name="INF_TYPE" intValue="995"/>
+            <attribute name="INF_TYPE" intValue="2090995"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -1019,7 +1019,7 @@
       </property> 
 	  <property name="DATATYPEVARCHAR" type="string" rid="605">
             <description>Converting Datatype DB2 VARCHAR  to oracle VARCHAR2</description>
-            <attribute name="INF_TYPE" intValue="996"/>
+            <attribute name="INF_TYPE" intValue="2090996"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -1027,7 +1027,7 @@
       </property> 
 	  <property name="VARCHAR_FOR_BIT_DATA" type="string" rid="606">
             <description>Converting Datatype DB2   VARCHAR_ FOR _BIT_ DATAto oracle RAW </description>
-            <attribute name="INF_TYPE" intValue="997"/>
+            <attribute name="INF_TYPE" intValue="2090997"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -1035,7 +1035,7 @@
       </property> 
 	  <property name="DATATYPEVARGRAPHIC" type="string" rid="607">
             <description>Converting Datatype DB2 VARGRAPHIC to oracle NVARCHAR2</description>
-            <attribute name="INF_TYPE" intValue="998"/>
+            <attribute name="INF_TYPE" intValue="2090998"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>
@@ -1043,7 +1043,7 @@
       </property> 
 	  <property name="XML" type="string" rid="608">
             <description>Converting Datatype DB2 XML to oracle XMLTYPE</description>
-            <attribute name="INF_TYPE" intValue="999"/>
+            <attribute name="INF_TYPE" intValue="2090999"/>
             <attribute name="INF_SUB_TYPE" intValue="1"/>
             <attribute name="ACCESS_APPVIEW" intValue="1"/>
             <attribute name="ACCESS_CVS" intValue="1"/>

@@ -1,7 +1,112 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <metaModel file_level="client"  file_no="90">
+<category name="db2oraclemigration" rid="2">
+		<description>db2oraclemigration</description>
+		<attribute name="extensions" stringValue="*.properties"/>
+		<inheritedCategory name="UniversalLanguage"/>
+		<inheritedCategory name="CsvLanguage"/>
+	</category>
 
+    
+	<category name="APM db2oraclemigration Module" rid="0">
+		<description>db2oraclemigration</description>
+		<inheritedCategory name="APM Client Modules"/>
+	</category>
+
+	<category name="APM db2oraclemigration Artifacts" rid="1">
+		<description>db2oraclemigration Artifacts</description>
+		<inheritedCategory name="APM Client Language Artifacts"/>
+		<!-- <inheritedCategory name="APM Sources"/> -->
+	</category>
+	
+	
+	
+	<!-- db2oraclemigration Enlighten group -->
+	<type name="Enlightendb2oraclemigration" rid="900">
+		<description>db2oraclemigration</description>
+		<tree parent="EnlightenUniversalObjects" category="EnlightenTree"/>
+	</type>
+	
+	<type name="db2oraclemigrationProject" rid="3">
+		<description>db2oraclemigration Project</description>
+		<inheritedCategory name="UAProject"/>
+		<inheritedCategory name="db2oraclemigration"/>
+		<inheritedCategory name="APM db2oraclemigration Module"/>
+	</type>
+	
+	<type name="db2oraclemigration_SUBSET" rid="400">
+		<description>db2oraclemigration Subset</description>
+		<inheritedCategory name="PROJECT_SUBSET"/>
+		<inheritedCategory name="db2oraclemigration"/>
+		<inheritedCategory name="APM db2oraclemigration Module"/>
+    </type>
+	
+	<partialType name="JV_GENERIC_METHOD">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+	  <partialType name="JV_INST_METHOD">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+	 
+	 <partialType name="JV_INST_CLASS">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	 
+	  <partialType name="JV_CTOR">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	 
+	 <partialType name="JV_METHOD">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+     
+	  <partialType name="JV_GENERIC_CTOR">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	  <partialType name="JV_INST_CTOR">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	  <partialType name="JV_INTERFACE">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	  <partialType name="JV_GENERIC_INTERFACE">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	 <partialType name="JV_INST_INTERFACE">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+
+     <partialType name="JV_GENERIC_CLASS">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+
+     <partialType name="JV_PROJECT">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+	 
+	  <partialType name="JV_PACKAGE">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	 
+	 <partialType name="JV_CLASS">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+     
      <partialType name="sourceFile" >
         <inheritedCategory name="dboraclemigrationScript"/>
         <inheritedCategory name="dboraclemigration_CustomMetrics"/>
@@ -1117,6 +1222,151 @@
             <attribute name="ACCESS_HTML" intValue="1"/>
       </property> 
      
+	  <property name="SNAPSHOT" type="string" rid="691">
+            <description>SNAPSHOT_ is used by DBA and monitoring tools</description>
+            <attribute name="INF_TYPE" intValue="2090201"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="LOAD" type="string" rid="692">
+            <description>LOAD command using statistics should be replaced functionally</description>
+            <attribute name="INF_TYPE" intValue="2090202"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="dynexpln" type="string" rid="693">
+            <description>dynexpln is used by DBA and monitoring tools</description>
+            <attribute name="INF_TYPE" intValue="2090203"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="SNAP" type="string" rid="694">
+            <description>SNAP_ is used by DBA and monitoring tools</description>
+            <attribute name="INF_TYPE" intValue="2090204"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="IMPORT_EXPORT" type="string" rid="695">
+            <description>WFS file format is not supported with IMPORT or EXPORT commands</description>
+            <attribute name="INF_TYPE" intValue="2090205"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="db2HistoryFcts" type="string" rid="696">
+            <description>db2History% fonctions are DB2 specifics and need to be removed</description>
+            <attribute name="INF_TYPE" intValue="2090206"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="REGEXP_REPLACE" type="string" rid="697">
+            <description>REGEXP_REPLACE changed over time and might require changes</description>
+            <attribute name="INF_TYPE" intValue="2090207"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="HEXTORAW" type="string" rid="698">
+            <description>HEXTORAW might lead to different results in different versions of DB2</description>
+            <attribute name="INF_TYPE" intValue="2090208"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="LOCALTIMESTAMP" type="string" rid="699">
+            <description>LOCALTIMESTAMP need to be reviewed for impact</description>
+            <attribute name="INF_TYPE" intValue="2090209"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="GLOBAL_TEMPORARY_TABLE" type="string" rid="700">
+            <description>GLOBAL TEMPORARY TABLE need to be reviewed for impact</description>
+            <attribute name="INF_TYPE" intValue="2090210"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="LISTAGG" type="string" rid="701">
+            <description>LISTAGG need to be reviewed for impact</description>
+            <attribute name="INF_TYPE" intValue="2090211"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="LPAD" type="string" rid="702">
+            <description>LPAD need to be reviewed for impact</description>
+            <attribute name="INF_TYPE" intValue="2090212"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="LTRIM" type="string" rid="703">
+            <description>LTRIM need to be reviewed for impact</description>
+            <attribute name="INF_TYPE" intValue="2090213"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="OVERLAY" type="string" rid="704">
+            <description>OVERLAY need to be reviewed for impact</description>
+            <attribute name="INF_TYPE" intValue="2090214"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="REPLACE" type="string" rid="705">
+            <description>REPLACE need to be reviewed for impact</description>
+            <attribute name="INF_TYPE" intValue="2090215"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="RPAD" type="string" rid="706">
+            <description>RPAD need to be reviewed for impact</description>
+            <attribute name="INF_TYPE" intValue="2090216"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="RTRIM" type="string" rid="707">
+            <description>RTRIM need to be reviewed for impact</description>
+            <attribute name="INF_TYPE" intValue="2090217"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+	  <property name="TRANSLATE" type="string" rid="708">
+            <description>TRANSLATE need to be reviewed for impact</description>
+            <attribute name="INF_TYPE" intValue="2090218"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property> 
+
 	</category>
 </metaModel>
 

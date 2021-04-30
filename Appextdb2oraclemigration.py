@@ -21,9 +21,6 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
         self.propvalue=[]
         pass     
     
-    
-            
-        
         
     def end_application(self, application):
         logging.debug("running code at the end of an application in db2oraclemigration")
@@ -40,20 +37,56 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
             logging.info(": error  saving property violation   : %s", str(err))  
             return tree
         for o in application.search_objects(category='sourceFile'):
+            # check if file is analyzed source code, or if it generated (Unknown)
+            if not o.get_path():
+                continue
+            if not (o.get_path().endswith('.sql')):
+                continue
+            #cast.analysers.log.debug("file found: >" + str(o.get_path()))
+            logging.debug("file found: >" + str(o.get_path()))
+            if (o.get_path().endswith('.sql')):
+                self.getsqlsearch(o, application, root)
+            
+            
+                
+        for o in application.search_objects(category='JV_FILE'):
+     
+            # check if file is analyzed source code, or if it generated (Unknown)
+            if not o.get_path():
+                continue
+           
+            if not (o.get_path().endswith('.java')):
+                continue
+            #cast.analysers.log.debug("file found: >" + str(o.get_path()))
+            logging.debug("file found: >" + str(o.get_path()))
+            
+            if (o.get_path().endswith('.java')):  
+                self.getJavafilesearch(o, application, root)
+                
+                
+        for o in application.search_objects(category='sourceFile'):
           
             # check if file is analyzed source code, or if it generated (Unknown)
             if not o.get_path():
                 continue
            
-            if not (o.get_path().endswith('.sql')):
+            if not (o.get_path().endswith('.properties')):
                 continue
             #cast.analysers.log.debug("file found: >" + str(o.get_path()))
             logging.debug("file found: >" + str(o.get_path()))
-            self.getconfigsearch(o, application, root)
+            
+#             
+            
+            if (o.get_path().endswith('.properties')):
+                self.getpropertiessearch(o, application, root)
+               
+            if (o.get_path().endswith('.java')):  
+                self.getJavafilesearch(o, application, root)
+            
             #self.scan_Sql(application, o)               
             
-    def getconfigsearch(self,  file, application, root): 
-        logging.info("file start")
+    def getsqlsearch(self,  file, application, root): 
+        logging.info("file sql start")
        
         try:
                     for group in root.findall('Search'):
@@ -68,14 +101,59 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                                 self.sgobjname=sobjname
                                 sviolation = group.find('Rulename').text 
                                 logging.debug(str(sobjname)+"Reg ex--->"+str(self.sregex) )
-                                self.setprop(application, file, sobjname, sviolation); 
+                                self.setpropjavasql(application, file, sobjname, sviolation); 
                                 
         except Exception as e:
             logging.info(": error  db2Sql extension  set : %s", str(e))  
             return  
+        
+        
+    def getpropertiessearch(self,  file, application, root): 
+        logging.info("Properties java start")
+       
+        try:
+                    for group in root.findall('propertiesfileSearch'):
+                        self.sregex = unescape(group.find('RegexPattern').text)
+                        logging.debug("---"+str(self.sregex)+ "---")
+                                   
+                        if file.get_name().endswith('.properties'):
+                            logging.info('Scanning properties  file :'+str(Path(file.get_path()).name))
+                            if (os.path.isfile(file.get_path())):
+                                sobjname = group.find('propertyname').text 
+                                self.currentsrcfile= file
+                                self.sgobjname=sobjname
+                                sviolation = group.find('Rulename').text 
+                                logging.debug(str(sobjname)+"Reg ex--->"+str(self.sregex) )
+                                self.setprop(application, file, sobjname, sviolation); 
+                                
+        except Exception as e:
+            logging.info(": error  db2Sql extension  properties search  : %s", str(e))  
+            return  
+                                
+    def getJavafilesearch(self,  file, application, root): 
+        logging.info("java file start")
+       
+        try:
+                    for group in root.findall('javafileSearch'):
+                        self.sregex = unescape(group.find('RegexPattern').text)
+                        logging.debug("---"+str(self.sregex)+ "---")
+                                   
+                        if file.get_name().endswith('.java'):
+                            logging.info('Scanning java  file :'+str(Path(file.get_path()).name))
+                            if (os.path.isfile(file.get_path())):
+                                sobjname = group.find('propertyname').text 
+                                self.currentsrcfile= file
+                                self.sgobjname=sobjname
+                                sviolation = group.find('Rulename').text 
+                                logging.debug(str(sobjname)+"Reg ex--->"+str(self.sregex) )
+                                self.setpropjavasql(application, file, sobjname, sviolation); 
+                                      
+        except Exception as e:
+            logging.info(": error  db2Sql extension  java search  : %s", str(e))  
+            return  
         # Final reporting in ApplicationPlugins.castlog
         
-    def setprop(self, application, file, sobjname, rulename):
+    def setpropjavasql(self, application, file, sobjname, rulename):
             # one RF for multiples patterns
             
             rfCall = ReferenceFinder()
@@ -94,7 +172,7 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                     obj = file.find_most_specific_object(linenb, 1)
                     self.propvalue.append(str(reference.value)+" "+str(reference.bookmark))
                     obj.save_violation('dboraclemigration_CustomMetrics.'+ rulename, reference.bookmark)
-                    #logging.debug("violation saved: >" +'dboraclemigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
+                    logging.debug("violation saved: >" +'dboraclemigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
                             #break
 #                     file.save_property('dboraclemigrationScript.'+sobjname, reference.value+" "+str(reference.bookmark) )
 #                     logging.info("property saved: >" +'dboraclemigrationScript.'+sobjname +" "+str(reference.bookmark)+ ' '+ str(reference.value))
@@ -102,11 +180,40 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                 #logging.debug("Value of list-->"+ str(getvalue))
                 if len(getvalue) >0:
                     obj.save_property('dboraclemigrationScript.'+sobjname, str(getvalue))
-                    #logging.info("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+str(getvalue))
+                    logging.info("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+str(getvalue))
                
 #       
             except Exception as e:
                 logging.info(": error  saving property violation   : %s", str(e))  
+                return 
+            
+    def setprop(self, application, file, sobjname, rulename):
+            # one RF for multiples patterns
+            
+            rfCall = ReferenceFinder()
+            rfCall.add_pattern(('srcline'),before ='' , element =self.sregex, after = '')     # requires application_1_4_7 or above
+            
+            # search all patterns in current program
+            try:
+                self.propvalue =[]
+                getvalue=""
+                references = [reference for reference in rfCall.find_references_in_file(file)]
+                for  reference in references:
+                    reference.bookmark.file= file
+                    self.propvalue.append(str(reference.value)+" "+str(reference.bookmark))
+                    file.save_violation('dboraclemigration_CustomMetrics.'+ rulename, reference.bookmark)
+                    logging.info("violation saved: >" +'dboraclemigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
+                            #break
+#                     file.save_property('dboraclemigrationScript.'+sobjname, reference.value+" "+str(reference.bookmark) )
+#                     logging.info("property saved: >" +'dboraclemigrationScript.'+sobjname +" "+str(reference.bookmark)+ ' '+ str(reference.value))
+                getvalue="".join(self.propvalue)
+                #logging.debug("Value of list-->"+ str(getvalue))
+                file.save_property('dboraclemigrationScript.'+sobjname, str(getvalue))
+                logging.info("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+str(getvalue))
+               
+#       
+            except Exception as e:
+                logging.info(": error  saving property violation on properties  : %s", str(e))  
                 return 
             
      
@@ -117,7 +224,9 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                      'SQLScriptProcedure','SQLScriptDML','SQLScriptFunction','SQLScriptView','SQLScriptTrigger',
                      'SQLScriptPackage','SQLScriptType','SQLScriptForeignKey','SQLScriptUniqueConstraint','SQLScriptEvent',
                      'SQLScriptSynonym','SQLScriptTableSynonym','SQLScriptViewSynonym','SQLScriptFunctionSynonym',
-                     'SQLScriptProcedureSynonym','SQLScriptPackageSynonym','SQLScriptTypeSynonym','SQLScriptMethod']
+                     'SQLScriptProcedureSynonym','SQLScriptPackageSynonym','SQLScriptTypeSynonym','SQLScriptMethod','JV_METHOD', 'JV_GENERIC_METHOD', 
+                     'JV_INST_METHOD', 'JV_INST_CLASS', 'JV_CTOR', 'JV_GENERIC_CTOR', 'JV_INST_CTOR', 'JV_INTERFACE', 'JV_GENERIC_INTERFACE', 
+                     'JV_INST_INTERFACE', 'JV_GENERIC_CLASS','JV_PROJECT', 'JV_PACKAGE', 'JV_CLASS']
         for declareitems in declarelist: 
                 application.declare_property_ownership('dboraclemigrationScript.CONCAT',[declareitems])
                 application.declare_property_ownership('dboraclemigrationScript.NEXT_VALUE',[declareitems])
@@ -230,10 +339,29 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                 application.declare_property_ownership('dboraclemigrationScript.VARCHAR_FOR_BIT_DATA',[declareitems])
                 application.declare_property_ownership('dboraclemigrationScript.VARGRAPHIC',[declareitems])
                 application.declare_property_ownership('dboraclemigrationScript.XML',[declareitems])
+                # Added By Julien
+                application.declare_property_ownership('dboraclemigrationScript.SNAPSHOT',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.LOAD',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.dynexpln',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.SNAP',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.IMPORT_EXPORT',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.db2HistoryFcts',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.REGEXP_REPLACE',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.HEXTORAW',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.LOCALTIMESTAMP',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.GLOBAL_TEMPORARY_TABLE',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.LISTAGG',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.LPAD',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.LTRIM',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.OVERLAY',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.REPLACE',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.RPAD',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.RTRIM',[declareitems])
+                application.declare_property_ownership('dboraclemigrationScript.TRANSLATE',[declareitems])
+                #end
                 application.declare_property_ownership('dboraclemigration_CustomMetrics.Built_in_SQL_Functions_variations',[declareitems])
                 application.declare_property_ownership('dboraclemigration_CustomMetrics.SQL_language_elements_variations',[declareitems])
                 application.declare_property_ownership('dboraclemigration_CustomMetrics.Datetime_interval_expressions_variations',[declareitems])
                 application.declare_property_ownership('dboraclemigration_CustomMetrics.Data_Types_variations',[declareitems])
                 application.declare_property_ownership('dboraclemigration_CustomMetrics.SELECT_Statement_variations',[declareitems])
-                application.declare_property_ownership('dboraclemigration_CustomMetrics.CREATE_TABLE_statement_variations',[declareitems])  
-               
+                application.declare_property_ownership('dboraclemigration_CustomMetrics.CREATE_TABLE_statement_variations',[declareitems])

@@ -50,39 +50,36 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
             
                 
         for o in application.search_objects(category='JV_FILE'):
-     
+      
             # check if file is analyzed source code, or if it generated (Unknown)
             if not o.get_path():
                 continue
-           
+            
             if not (o.get_path().endswith('.java')):
                 continue
             #cast.analysers.log.debug("file found: >" + str(o.get_path()))
             logging.debug("file found: >" + str(o.get_path()))
-            
+             
             if (o.get_path().endswith('.java')):  
                 self.getJavafilesearch(o, application, root)
-                
-                
+                 
+                 
         for o in application.search_objects(category='sourceFile'):
-          
+           
             # check if file is analyzed source code, or if it generated (Unknown)
             if not o.get_path():
                 continue
-           
+            
             if not (o.get_path().endswith('.properties')):
                 continue
             #cast.analysers.log.debug("file found: >" + str(o.get_path()))
             logging.debug("file found: >" + str(o.get_path()))
-            
-#             
-            
+         
             if (o.get_path().endswith('.properties')):
                 self.getpropertiessearch(o, application, root)
-               
-            if (o.get_path().endswith('.java')):  
-                self.getJavafilesearch(o, application, root)
-            
+                
+       
+#             
             #self.scan_Sql(application, o)               
             
     def getsqlsearch(self,  file, application, root): 
@@ -161,8 +158,9 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
             
             # search all patterns in current program
             try:
-                self.propvalue =[]
-                getvalue=""
+                #self.propvalue =[]
+                #getvalue=""
+                cntj= 0
                 references = [reference for reference in rfCall.find_references_in_file(file)]
                 for  reference in references:
                     reference.bookmark.file= file
@@ -170,17 +168,18 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                     #logging.debug( str(reference.bookmark).split(',')[2])
                     #logging.debug("Specific object:"+ str(file.find_most_specific_object(linenb, 1)))
                     obj = file.find_most_specific_object(linenb, 1)
-                    self.propvalue.append(str(reference.value)+" "+str(reference.bookmark))
+                    cntj =cntj+1
+                    #self.propvalue.append(str(reference.value)+" "+str(reference.bookmark))
                     obj.save_violation('dboraclemigration_CustomMetrics.'+ rulename, reference.bookmark)
                     logging.debug("violation saved: >" +'dboraclemigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
                             #break
 #                     file.save_property('dboraclemigrationScript.'+sobjname, reference.value+" "+str(reference.bookmark) )
 #                     logging.info("property saved: >" +'dboraclemigrationScript.'+sobjname +" "+str(reference.bookmark)+ ' '+ str(reference.value))
-                getvalue="".join(self.propvalue)
+                #getvalue="".join(self.propvalue)
                 #logging.debug("Value of list-->"+ str(getvalue))
-                if len(getvalue) >0:
-                    obj.save_property('dboraclemigrationScript.'+sobjname, str(getvalue))
-                    logging.info("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+str(getvalue))
+                if cntj>0:
+                    obj.save_property('dboraclemigrationScript.'+sobjname, str(cntj))
+                    logging.debug("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+str(cntj))
                
 #       
             except Exception as e:
@@ -195,21 +194,24 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
             
             # search all patterns in current program
             try:
-                self.propvalue =[]
-                getvalue=""
+#                 self.propvalue =[]
+#                 getvalue=""
+                cntprop= 0
                 references = [reference for reference in rfCall.find_references_in_file(file)]
                 for  reference in references:
                     reference.bookmark.file= file
-                    self.propvalue.append(str(reference.value)+" "+str(reference.bookmark))
+                    cntprop =cntprop+1
+                    #self.propvalue.append(str(reference.value)+" "+str(reference.bookmark))
                     file.save_violation('dboraclemigration_CustomMetrics.'+ rulename, reference.bookmark)
-                    logging.info("violation saved: >" +'dboraclemigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
+                    logging.debug("violation saved: >" +'dboraclemigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
                             #break
 #                     file.save_property('dboraclemigrationScript.'+sobjname, reference.value+" "+str(reference.bookmark) )
 #                     logging.info("property saved: >" +'dboraclemigrationScript.'+sobjname +" "+str(reference.bookmark)+ ' '+ str(reference.value))
-                getvalue="".join(self.propvalue)
+#                 getvalue="".join(self.propvalue)
                 #logging.debug("Value of list-->"+ str(getvalue))
-                file.save_property('dboraclemigrationScript.'+sobjname, str(getvalue))
-                logging.info("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+str(getvalue))
+                if cntprop >0:
+                    file.save_property('dboraclemigrationScript.'+sobjname, str(cntprop))
+                    logging.debug("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+str(cntprop))
                
 #       
             except Exception as e:
@@ -225,7 +227,7 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                      'SQLScriptPackage','SQLScriptType','SQLScriptForeignKey','SQLScriptUniqueConstraint','SQLScriptEvent',
                      'SQLScriptSynonym','SQLScriptTableSynonym','SQLScriptViewSynonym','SQLScriptFunctionSynonym',
                      'SQLScriptProcedureSynonym','SQLScriptPackageSynonym','SQLScriptTypeSynonym','SQLScriptMethod','JV_METHOD', 'JV_GENERIC_METHOD', 
-                     'JV_INST_METHOD', 'JV_INST_CLASS', 'JV_CTOR', 'JV_GENERIC_CTOR', 'JV_INST_CTOR', 'JV_INTERFACE', 'JV_GENERIC_INTERFACE', 
+                     'JV_INST_METHOD', 'JV_INST_CLASS', 'JV_CTOR', 'JV_GENERIC_CTOR', 'JV_FILE', 'JV_INST_CTOR', 'JV_INTERFACE', 'JV_GENERIC_INTERFACE', 
                      'JV_INST_INTERFACE', 'JV_GENERIC_CLASS','JV_PROJECT', 'JV_PACKAGE', 'JV_CLASS']
         for declareitems in declarelist: 
                 application.declare_property_ownership('dboraclemigrationScript.CONCAT',[declareitems])

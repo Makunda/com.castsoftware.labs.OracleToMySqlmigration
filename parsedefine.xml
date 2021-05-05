@@ -1,8 +1,191 @@
 <?xml version="1.0"?>
 <db2oraclemigrationUA>
+	<javafileSearch>
+		<RegexPattern>\bexecQuery\b</RegexPattern>
+		<propertyname>SNAPSHOT</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bLOAD\b</RegexPattern>
+		<propertyname>LOAD</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bdynexpln\b</RegexPattern>
+		<propertyname>dynexpln</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bSNAP_\b</RegexPattern>
+		<propertyname>SNAP</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\b(IMPORT|EXPORT)\b</RegexPattern>
+		<propertyname>IMPORT_EXPORT</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\b(db2HistoryCloseScan|db2HistoryGetEntry|db2HistoryOpenScan|db2HistoryUpdate)\b</RegexPattern>
+		<propertyname>db2HistoryFcts</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bREGEXP_REPLACE\b</RegexPattern>
+		<propertyname>REGEXP_REPLACE</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bHEXTORAW\b</RegexPattern>
+		<propertyname>HEXTORAW</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bLOCALTIMESTAMP\b</RegexPattern>
+		<propertyname>LOCALTIMESTAMP</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bGLOBAL[ \t]+TEMPORARY[ \t]+TABLE\b</RegexPattern>
+		<propertyname>GLOBAL_TEMPORARY_TABLE</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bLISTAGG\b</RegexPattern>
+		<propertyname>LISTAGG</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bLPAD\b</RegexPattern>
+		<propertyname>LPAD</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bLTRIM\b</RegexPattern>
+		<propertyname>LTRIM</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bOVERLAY\b</RegexPattern>
+		<propertyname>OVERLAY</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bREPLACE\b</RegexPattern>
+		<propertyname>REPLACE</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bRPAD\b</RegexPattern>
+		<propertyname>RPAD</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bRTRIM\b</RegexPattern>
+		<propertyname>RTRIM</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	<javafileSearch>
+		<RegexPattern>\bTRANSLATE\b</RegexPattern>
+		<propertyname>TRANSLATE</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</javafileSearch>
+	
+	
+	<propertiesfileSearch>
+		<RegexPattern>\bSNAPSHOT_\b</RegexPattern>
+		<propertyname>SNAPSHOT</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bLOAD\b</RegexPattern>
+		<propertyname>LOAD</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bdynexpln\b</RegexPattern>
+		<propertyname>dynexpln</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bSNAP_\b</RegexPattern>
+		<propertyname>SNAP</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\b(IMPORT|EXPORT)\b</RegexPattern>
+		<propertyname>IMPORT_EXPORT</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\b(db2HistoryCloseScan|db2HistoryGetEntry|db2HistoryOpenScan|db2HistoryUpdate)\b</RegexPattern>
+		<propertyname>db2HistoryFcts</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bREGEXP_REPLACE\b</RegexPattern>
+		<propertyname>REGEXP_REPLACE</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bHEXTORAW\b</RegexPattern>
+		<propertyname>HEXTORAW</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bLOCALTIMESTAMP\b</RegexPattern>
+		<propertyname>LOCALTIMESTAMP</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bGLOBAL[ \t]+TEMPORARY[ \t]+TABLE\b</RegexPattern>
+		<propertyname>GLOBAL_TEMPORARY_TABLE</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bLISTAGG\b</RegexPattern>
+		<propertyname>LISTAGG</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bLPAD\b</RegexPattern>
+		<propertyname>LPAD</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bLTRIM\b</RegexPattern>
+		<propertyname>LTRIM</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bOVERLAY\b</RegexPattern>
+		<propertyname>OVERLAY</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bREPLACE\b</RegexPattern>
+		<propertyname>REPLACE</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bRPAD\b</RegexPattern>
+		<propertyname>RPAD</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bRTRIM\b</RegexPattern>
+		<propertyname>RTRIM</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+	<propertiesfileSearch>
+		<RegexPattern>\bTRANSLATE\b</RegexPattern>
+		<propertyname>TRANSLATE</propertyname>
+		<Rulename>SQL_language_elements_variations</Rulename>
+	</propertiesfileSearch>
+
 	<Search>
 		<RegexPattern>\bSNAPSHOT_\b</RegexPattern>
-		<propertyname>SNAPSHOT_</propertyname>
+		<propertyname>SNAPSHOT</propertyname>
 		<Rulename>SQL_language_elements_variations</Rulename>
 	</Search>
 	<Search>
@@ -15,30 +198,6 @@
 		<propertyname>dynexpln</propertyname>
 		<Rulename>SQL_language_elements_variations</Rulename>
 	</Search>
-	
-	<javafileSearch>
-		<RegexPattern>\bSchemaName\b</RegexPattern>
-		<propertyname>SNAPSHOT_</propertyname>
-		<Rulename>SQL_language_elements_variations</Rulename>
-	</javafileSearch>
-	
-	<javafileSearch>
-		<RegexPattern>\bSNAPSHOT_\b</RegexPattern>
-		<propertyname>SNAPSHOT_</propertyname>
-		<Rulename>SQL_language_elements_variations</Rulename>
-	</javafileSearch>
-	
-	<propertiesfileSearch>
-		<RegexPattern>\bSNAPSHOT_\b</RegexPattern>
-		<propertyname>SNAPSHOT</propertyname>
-		<Rulename>SQL_language_elements_variations</Rulename>
-	</propertiesfileSearch>
-	
-	<propertiesfileSearch>
-		<RegexPattern>\bSNAPSHOT_\b</RegexPattern>
-		<propertyname>SNAPSHOT</propertyname>
-		<Rulename>SQL_language_elements_variations</Rulename>
-	</propertiesfileSearch>
 	<Search>
 		<RegexPattern>\bSNAP_\b</RegexPattern>
 		<propertyname>SNAP</propertyname>

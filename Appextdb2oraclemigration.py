@@ -19,6 +19,7 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
         self.xmlfile = ""
         self.file = ""    
         self.propvalue=[]
+        self.uniqueobjlist =[]
         pass     
     
         
@@ -158,8 +159,8 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
             
             # search all patterns in current program
             try:
-                #self.propvalue =[]
-                #getvalue=""
+                self.propvalue =[]
+                self.uniqueobjlist =[]
                 cntj= 0
                 references = [reference for reference in rfCall.find_references_in_file(file)]
                 for  reference in references:
@@ -169,22 +170,59 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                     #logging.debug("Specific object:"+ str(file.find_most_specific_object(linenb, 1)))
                     obj = file.find_most_specific_object(linenb, 1)
                     cntj =cntj+1
-                    #self.propvalue.append(str(reference.value)+" "+str(reference.bookmark))
+                    self.uniqueobjlist.append(sobjname + "cast" +str(obj))
                     obj.save_violation('dboraclemigration_CustomMetrics.'+ rulename, reference.bookmark)
-                    logging.debug("violation saved: >" +'dboraclemigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
+                    #logging.debug("violation saved: >" +'dboraclemigration_CustomMetrics.'+rulename+"  line:::"+str(reference.value)+str(reference.bookmark))
                             #break
 #                     file.save_property('dboraclemigrationScript.'+sobjname, reference.value+" "+str(reference.bookmark) )
 #                     logging.info("property saved: >" +'dboraclemigrationScript.'+sobjname +" "+str(reference.bookmark)+ ' '+ str(reference.value))
-                #getvalue="".join(self.propvalue)
-                #logging.debug("Value of list-->"+ str(getvalue))
-                if cntj>0:
-                    obj.save_property('dboraclemigrationScript.'+sobjname, str(cntj))
-                    logging.debug("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+str(cntj))
-               
-#       
+                                #logging.info('unique' + str(self.uniqueobjlist))
+                self.unique(self.uniqueobjlist,application)
+              #       
             except Exception as e:
                 logging.info(": error  saving property violation   : %s", str(e))  
                 return 
+            
+            # function to get unique values
+    def unique(self, objcastlist, application):
+       
+        unique_list = []
+        #logging.info(str(objcastlist))
+       
+       
+        for x in objcastlist:
+            # check if exists in unique_list or not
+            if x not in unique_list:
+                unique_list.append(x)
+                  
+        for x in unique_list:
+            logging.debug('{} has occurred {} times'.format(x, self.countcastobject(objcastlist, x)))
+            logging.debug(x)
+            orgx=x
+            x= x.replace('castObject', ',')
+            x=x.replace('(', '')
+            x= x.replace(')', '')
+            dbtype = x.split(',')[0].strip()
+            objname= x.split(',')[1].strip()
+            objcatergory =x.split(',')[2].strip()
+            if objname.find('.') is not -1:
+                objname = objname.split('.')[1]
+            MethodObjectReferences = list(application.search_objects(category=objcatergory,  name=objname,  load_properties=True))
+            if len(MethodObjectReferences)>0:
+                for obj in MethodObjectReferences : 
+                    cnt = str(self.countcastobject(objcastlist, orgx))
+                    obj.save_property('dboraclemigrationScript.'+dbtype, cnt)
+                    logging.debug("property saved: --->" +'dboraclemigrationScript.'+dbtype +" "+cnt)  
+                        
+    def countcastobject(self, lst, x):
+        count = 0
+        for ele in lst:
+            if (ele == x):
+                count = count + 1
+        return count
+         
+        
+        
             
     def setprop(self, application, file, sobjname, rulename):
             # one RF for multiples patterns
@@ -195,7 +233,7 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
             # search all patterns in current program
             try:
 #                 self.propvalue =[]
-#                 getvalue=""
+                getvalue=""
                 cntprop= 0
                 references = [reference for reference in rfCall.find_references_in_file(file)]
                 for  reference in references:
@@ -207,11 +245,11 @@ class db2oraclemigrationExtensionApplication(ApplicationLevelExtension):
                             #break
 #                     file.save_property('dboraclemigrationScript.'+sobjname, reference.value+" "+str(reference.bookmark) )
 #                     logging.info("property saved: >" +'dboraclemigrationScript.'+sobjname +" "+str(reference.bookmark)+ ' '+ str(reference.value))
-#                 getvalue="".join(self.propvalue)
+                getvalue=str(cntprop)
                 #logging.debug("Value of list-->"+ str(getvalue))
                 if cntprop >0:
-                    file.save_property('dboraclemigrationScript.'+sobjname, str(cntprop))
-                    logging.debug("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+str(cntprop))
+                    file.save_property('dboraclemigrationScript.'+sobjname, getvalue)
+                    logging.debug("property saved: --->" +'dboraclemigrationScript.'+sobjname +" "+getvalue)
                
 #       
             except Exception as e:

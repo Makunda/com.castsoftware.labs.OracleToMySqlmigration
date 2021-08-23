@@ -8,9 +8,9 @@ class Test(unittest.TestCase):
     
     def testName(self):
         print (os.getcwd())
-        analysis = UATestAnalysis('db2oraclemigration')
+        analysis = UATestAnalysis('oracleToMySqlmigration')
 #         analysis.add_selection("0.9")
-        analysis.add_selection("db2oraclemigration")
+        analysis.add_selection("oracleToMySqlmigration")
         analysis.set_verbose()
         analysis.run()
 

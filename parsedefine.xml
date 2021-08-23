@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<db2oraclemigrationUA>
+<oracleToMySqlmigrationUA>
 	<javafileSearch>
 		<RegexPattern>\bexecQuery\b</RegexPattern>
 		<propertyname>SNAPSHOT</propertyname>
@@ -829,4 +829,4 @@
 		<propertyname>XML</propertyname>
 		<Rulename>Data_Types_variations</Rulename>
 	</Search>
- </db2oraclemigrationUA>
+ </oracleToMySqlmigrationUA>

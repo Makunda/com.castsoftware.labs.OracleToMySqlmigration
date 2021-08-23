@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <root>
-	<metric id="65105" type="quality-distribution" originalName="Size Distribution" parameterName="Average Size Threshold" parameterType="float" parameterIndex="1" filter="2090001" filterLabel="db2oraclemigration" parameterDescription="N/A">
+	<metric id="65105" type="quality-distribution" originalName="Size Distribution" parameterName="Average Size Threshold" parameterType="float" parameterIndex="1" filter="2090001" filterLabel="oracleToMySqlmigration" parameterDescription="N/A">
 		<defaultValue>100.0</defaultValue>
 		<defaultValuesList>N/A</defaultValuesList>
 	</metric>
-	<metric id="65105" type="quality-distribution" originalName="Size Distribution" parameterName="Large Size Threshold" parameterType="float" parameterIndex="2" filter="2090001" filterLabel="db2oraclemigration" parameterDescription="N/A">
+	<metric id="65105" type="quality-distribution" originalName="Size Distribution" parameterName="Large Size Threshold" parameterType="float" parameterIndex="2" filter="2090001" filterLabel="oracleToMySqlmigration" parameterDescription="N/A">
 		<defaultValue>500.0</defaultValue>
 		<defaultValuesList>N/A</defaultValuesList>
 	</metric>
-	<metric id="65105" type="quality-distribution" originalName="Size Distribution" parameterName="Very Large Size Threshold" parameterType="float" parameterIndex="3" filter="2090001" filterLabel="db2oraclemigration" parameterDescription="N/A">
+	<metric id="65105" type="quality-distribution" originalName="Size Distribution" parameterName="Very Large Size Threshold" parameterType="float" parameterIndex="3" filter="2090001" filterLabel="oracleToMySqlmigration" parameterDescription="N/A">
 		<defaultValue>1000.0</defaultValue>
 		<defaultValuesList>N/A</defaultValuesList>
 	</metric>

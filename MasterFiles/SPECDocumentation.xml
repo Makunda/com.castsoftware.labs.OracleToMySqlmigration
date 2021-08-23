@@ -73,7 +73,7 @@
 		<english>This quality rule searches for http://www.sqlines.com/db2-to-oracle#anguage-elements   inside SQL files, and report a violation when any datetime interval expressions is found..</english>
 	</metric>
 		<metric id="2090808" type="quality-rule" originalName='Data Types variations  from DB2 to Oracle.' section="description">
-		<english>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </english>
+		<english>This quality rules is populated using oracleToMySqlmigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </english>
 	</metric>
 	<metric id="2090808" type="quality-rule" originalName='Data Types variations from DB2 to Oracle.' section="name">
 		<english>Data Types variations  from DB2 to Oracle.</english>

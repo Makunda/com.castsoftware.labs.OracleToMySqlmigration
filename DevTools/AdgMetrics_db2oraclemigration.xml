@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<DATA model='Central Model' version='1.1' scope='db2oraclemigrationScope' export='OK'><!-- File generated with CAST Metrics Compiler ##VERSION_BUILD## -->
+<DATA model='Central Model' version='1.1' scope='oracleToMySqlmigrationScope' export='OK'><!-- File generated with CAST Metrics Compiler ##VERSION_BUILD## -->
   <DSS_METRIC_TYPES>
     <METRIC_ID>2090802</METRIC_ID>
     <METRIC_NAME>Built-in SQL Functions need to be refactored.</METRIC_NAME>
@@ -808,7 +808,7 @@
     <METRIC_ID>2090808</METRIC_ID>
     <DESCRIPTION_TYPE_ID>2</DESCRIPTION_TYPE_ID>
     <LANGUAGE>ENGLISH</LANGUAGE>
-    <METRIC_DESCRIPTION>This quality rules is populated using db2oraclemigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </METRIC_DESCRIPTION>
+    <METRIC_DESCRIPTION>This quality rules is populated using oracleToMySqlmigration output. Each violation reported is converted in a bookmark, representing a defect inside an sql file module, which is reported as a violation. </METRIC_DESCRIPTION>
   </DSS_METRIC_DESCRIPTIONS>
   <DSS_METRIC_DESCRIPTIONS>
     <METRIC_ID>2090808</METRIC_ID>

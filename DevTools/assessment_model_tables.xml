@@ -106,7 +106,7 @@
     </index>
   </table>
   
-  <scope name="db2oraclemigrationScope">
+  <scope name="oracleToMySqlmigrationScope">
                <scopetable name="DSS_METRIC_TYPES" filter="(METRIC_ID BETWEEN 2090000 AND 2090999)"/>
                <scopetable name="DSS_METRIC_TYPE_TREES" filter="(METRIC_ID BETWEEN 2090000 AND 2090999)"/>
                <scopetable name="DSS_METRIC_VALUE_TYPES" filter="(METRIC_ID BETWEEN 2090000 AND 2090999)"/>

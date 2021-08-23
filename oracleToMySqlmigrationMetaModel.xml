@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<metaModel file_level="client"  file_no="90">
+<category name="oracleToMySqlmigration" rid="2">
+		<description>oracleToMySqlmigration</description>
+		<attribute name="extensions" stringValue="*.properties"/>
+		<inheritedCategory name="UniversalLanguage"/>
+		<inheritedCategory name="CsvLanguage"/>
+	</category>
+
+    
+	<category name="APM oracleToMySqlmigration Module" rid="0">
+		<description>oracleToMySqlmigration</description>
+		<inheritedCategory name="APM Client Modules"/>
+	</category>
+
+	<category name="APM oracleToMySqlmigration Artifacts" rid="1">
+		<description>oracleToMySqlmigration Artifacts</description>
+		<inheritedCategory name="APM Client Language Artifacts"/>
+		<!-- <inheritedCategory name="APM Sources"/> -->
+	</category>
+	
+	
+	
+	<!-- oracleToMySqlmigration Enlighten group -->
+	<type name="EnlightenoracleToMySqlmigration" rid="900">
+		<description>oracleToMySqlmigration</description>
+		<tree parent="EnlightenUniversalObjects" category="EnlightenTree"/>
+	</type>
+	
+	<type name="oracleToMySqlmigrationProject" rid="3">
+		<description>oracleToMySqlmigration Project</description>
+		<inheritedCategory name="UAProject"/>
+		<inheritedCategory name="oracleToMySqlmigration"/>
+		<inheritedCategory name="APM oracleToMySqlmigration Module"/>
+	</type>
+	
+	<type name="oracleToMySqlmigration_SUBSET" rid="400">
+		<description>oracleToMySqlmigration Subset</description>
+		<inheritedCategory name="PROJECT_SUBSET"/>
+		<inheritedCategory name="oracleToMySqlmigration"/>
+		<inheritedCategory name="APM oracleToMySqlmigration Module"/>
+    </type>
+	
+	<partialType name="JV_GENERIC_METHOD">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="JV_FILE">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+      
+	  <partialType name="JV_INST_METHOD">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+	 
+	 <partialType name="JV_INST_CLASS">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	 
+	  <partialType name="JV_CTOR">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	 
+	 <partialType name="JV_METHOD">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+     
+	  <partialType name="JV_GENERIC_CTOR">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	  <partialType name="JV_INST_CTOR">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	  <partialType name="JV_INTERFACE">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	  <partialType name="JV_GENERIC_INTERFACE">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	 <partialType name="JV_INST_INTERFACE">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+
+     <partialType name="JV_GENERIC_CLASS">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+
+     <partialType name="JV_PROJECT">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+	 
+	  <partialType name="JV_PACKAGE">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+	 
+	 <partialType name="JV_CLASS">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType>
+     
+     <partialType name="sourceFile" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptSchema">
+       <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptTable" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+     
+     <partialType name="SQLScriptTableColumn" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+     
+     <partialType name="SQLScriptIndex" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptProcedure" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptDML" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptFunction" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+     
+       <partialType name="SQLScriptView" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+      <partialType name="SQLScriptTrigger" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+       <partialType name="SQLScriptPackage" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+      <partialType name="SQLScriptType" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+    
+     <partialType name="SQLScriptForeignKey" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+    
+        
+     <partialType name="SQLScriptUniqueConstraint" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+      <partialType name="SQLScriptEvent" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+    
+     <partialType name="SQLScriptSynonym" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+     <partialType name="SQLScriptTableSynonym" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+     <partialType name="SQLScriptViewSynonym" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+     <partialType name="SQLScriptFunctionSynonym" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+     <partialType name="SQLScriptProcedureSynonym" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+     <partialType name="SQLScriptPackageSynonym" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+    
+    <partialType name="SQLScriptTypeSynonym" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+    
+    
+     <partialType name="SQLScriptMethod" >
+        <inheritedCategory name="dboraclemigrationScript"/>
+        <inheritedCategory name="dboraclemigration_CustomMetrics"/>
+     </partialType> 
+     
+          
+     <category name="dboraclemigration_CustomMetrics" id="2095800">
+	  <description>db2 to oracle migration code items need to be addressed</description>
+	 <property name="Built_in_SQL_Functions_variations" type="integer"   id="2095802">
+			<description>Built-in SQL Functions need to be refactored</description>
+			<attribute name="INF_TYPE" intValue="2095814"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	  <property name="SQL_language_elements_variations" type="integer"   id="2095804">
+			<description>Converting SQL language elements variations from Oracle to MySQL</description>
+			<attribute name="INF_TYPE" intValue="2095816"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	 <property name="Datetime_interval_expressions_variations" type="integer"   id="2095806">
+			<description>Datetime interval expressions need to be refactored</description>
+			<attribute name="INF_TYPE" intValue="2095818"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	  <property name="Data_Types_variations" type="integer"   id="2095808">
+			<description>Data Types variations from Oracle to MySQL</description>
+			<attribute name="INF_TYPE" intValue="2095820"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	  <property name="SELECT_Statement_variations" type="integer"   id="2095810">
+			<description>SELECT Statements from Oracle to MySQL need to be refactored</description>
+			<attribute name="INF_TYPE" intValue="2095822"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	 <property name="CREATE_TABLE_statement_variations" type="integer"   id="20958012">
+			<description>CREATE TABLE statement from Oracle to MySQL need to be refactored</description>
+			<attribute name="INF_TYPE" intValue="2095824"/>
+			<attribute name="INF_SUB_TYPE" intValue="1"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	 </property>
+	</category>
+	
+     <category name="dboraclemigrationScript" rid="5">
+      <description>Custom category for DB2 to oracle migration</description>
+       <property name="CONCAT" type="string" rid="430">
+            <description>Converting SQL language elements from DB2 CONCAT to Oracle symbol</description>
+            <attribute name="INF_TYPE" intValue="2095301"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+        <property name="NEXT_VALUE" type="string" rid="431">
+            <description>Converting SQL language elements from DB2 NEXT VALUE  to Oracle NEXTVAL </description>
+            <attribute name="INF_TYPE" intValue="2095302"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+        <property name="RESULT_SET_LOCATOR" type="string" rid="432">
+            <description>Converting SQL language elements from DB2 RESULT_SET_LOCATOR to Oracle SYS_REFCURSOR </description>
+            <attribute name="INF_TYPE" intValue="2095303"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+      
+       <property name="DAYS" type="string" rid="595">
+            <description>Converting Datetime interval expressions from DAYS to Oracle NUMTODSINTERVAL</description>
+            <attribute name="INF_TYPE" intValue="2095904"/>
+            <attribute name="INF_SUB_TYPE" intValue="1"/>
+            <attribute name="ACCESS_APPVIEW" intValue="1"/>
+            <attribute name="ACCESS_CVS" intValue="1"/>
+            <attribute name="ACCESS_HTML" intValue="1"/>
+      </property>
+
+	</category>
+</metaModel>
+
+
